@@ -33,8 +33,7 @@
 		</div>
 		<hr>
 		<p>
-			© Raymond Camden all rights reserved.
-			Powered by Eleventy. BlogInn theme by JustGoodThemes
+			{{ .Site.Params.copyright }} {{ .Site.Title }} · Powered by <a href="https://gohugo.io/" class="has-text-white">Hugo</a> & <a href="http://bulma.io/" class="has-text-white">Bulma</a>. 
 		</p>
 		{{ with .Site.Params.widgets.scrolltop }}
 		<div class="buttons is-centered is-hidden-tablet">
