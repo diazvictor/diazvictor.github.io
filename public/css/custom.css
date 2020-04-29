@@ -14,6 +14,14 @@
 	padding: 3rem 1.5rem 2rem;
 }
 
+.navbar-burger.burger {
+	height: 4.25rem;
+}
+
+.navbar-burger span {
+	height: 2px;
+}
+
 /*==============================================
 = Paginacion para los articulos
 ==============================================*/
