@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "es"
-publishDir = "docs"
+publishDir = "public"
 title = "diazvictor"
 theme = "blue-ocean"
 

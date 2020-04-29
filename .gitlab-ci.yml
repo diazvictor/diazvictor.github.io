@@ -6,6 +6,6 @@ pages:
   - hugo -D
   artifacts:
     paths:
-    - docs
+    - public
   only:
   - master
