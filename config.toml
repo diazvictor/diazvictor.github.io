@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "es"
 publishDir = "public"
 title = "diazvictor"
+disqusShortname = "diazvictor"
 theme = "blue-ocean"
 
 [params]
