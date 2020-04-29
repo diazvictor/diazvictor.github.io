@@ -28,7 +28,7 @@
 				{{ end }}
 			</section>
 		    {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disable_comments | default false) false) -}}
-			<div class="section">
+			<div class="section comments">
 			    <div id="disqus_thread"></div>
 			    <script>
 			        (function() { // DON'T EDIT BELOW THIS LINE

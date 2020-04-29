@@ -10,6 +10,10 @@
 	content: "- ";
 }
 
+.section.comments {
+	padding: 0rem 1.5rem;
+}
+
 .footer {
 	padding: 3rem 1.5rem 2rem;
 }
