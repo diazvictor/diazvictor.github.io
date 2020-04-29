@@ -12,6 +12,7 @@
 						{{- .Content -}}
 					</div>
 			    </article>
+			    {{ if eq .Type "post"}}
 			    {{ if or .NextInSection .PrevInSection }}
 				<nav class="bd-prev-next-bis">
 					{{ if .NextInSection }}
@@ -25,6 +26,7 @@
 					</a>
 					{{ end }}
 				</nav>
+				{{ end }}
 				{{ end }}
 			</section>
 			{{ if eq .Type "post"}}
