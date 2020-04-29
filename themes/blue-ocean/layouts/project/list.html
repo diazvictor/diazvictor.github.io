@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+{{- partial "head.html" . -}}
+<body>
+	{{- partial "header.html" . -}}
+	{{ if .Site.Params.sidebar.sidebar }}
+	<div class="columns">
+		<div class="column is-8">
+			<section class="section">
+				{{ with .Site.Params.project }}
+					<div class="columns">
+					{{ range . }}
+						<div class="column is-6">
+						<div class="card">
+						    <header class="card-header">
+						        <p class="card-header-title">
+						            <span>{{ .name }}</span> &nbsp;
+						            <span class="is-pulled-right">
+					                    <span class="tag is-default">{{ .version }}</span>
+						            </span>
+						        </p>
+						    </header>
+						    <div class="card-content">
+						        <figure class="image is-16by9">
+						            <img src="/images/project/{{ .thumbnail }}" alt="{{ .description }}">
+						        </figure>
+						    </div>
+						    <footer class="card-footer">
+						        <a href="{{ .url }}" class="card-footer-item">Preview</a>
+						        <a href="{{ .urlCode }}" class="card-footer-item">
+									Source Code
+								</a>
+						    </footer>
+						</div>
+						</div>
+					{{ end }}
+					</div>
+				{{ end }}
+                {{ range first .Site.Params.recent_num .Data.Pages }}
+                {{ if eq .Type "project"}}
+                <article class="box">
+                    <header>
+                        <a href="{{.RelPermalink}}">
+                            <h1 class="title">{{ .Title }}</h1>
+                        </a>
+                    </header>
+                    {{ if .Summary }}
+                    <br>
+                    {{ .Summary }}
+                    <footer>
+                        <br>
+                        <a href="{{.RelPermalink}}" class="button is-link">Read More &raquo;</a>
+                    </footer>
+                    {{ end }}
+                </article>
+                {{ end }}
+                {{ end }}
+            </section>
+		</div>
+		{{- partial "sidebar.html" . -}}
+	</div>
+	{{ else }}
+	{{- partial "section.html" . -}}
+	{{ end }}
+	{{- partial "footer.html" . -}}
+</body>
+</html>
