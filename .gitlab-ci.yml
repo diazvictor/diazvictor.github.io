@@ -3,7 +3,8 @@ pages:
   stage: deploy
   script:
   - apk update && apk add hugo
-  - hugo -D
+  - rm -r public/*
+  - hugo --minify -D
   artifacts:
     paths:
     - public
