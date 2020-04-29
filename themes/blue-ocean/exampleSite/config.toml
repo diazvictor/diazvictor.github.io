@@ -1,0 +1,58 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "diazvictor"
+theme = "blue-ocean"
+
+[params]
+author = "VÍCTOR DÍAZ"
+description = "dedicado al desarrollo web y aplicaciones, enamorado de lua."
+keywords = "blog, developer, personal" # Site keywords.
+info = "DESARROLLO WEB Y APLICACIONES"
+avatar = "/images/favicon.png"
+dateFormat = ""
+recent_num = 5
+
+[menu]
+	[[menu.item]]
+	name = "BLOG"
+    url = "/post"
+    weight = 1
+
+	[[menu.item]]
+	name = "AYUDA"
+    url = "/about"
+    weight = 2
+
+    [[menu.item]]
+	name = "SERVICIOS"
+    url = "/services"
+    weight = 3
+
+    [[menu.item]]
+	name = "PORTOFOLIO"
+    url = ""
+    weight = 4
+
+    [[menu.item]]
+	name = "CONTACTOS"
+    url = "/contact"
+    weight = 5
+
+[params.sidebar]
+sidebar = true
+widgets = ["aboutbox", "recent", "categories", "taglist"]
+
+[params.widgets]
+aboutbox_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore"
+recent_num = 3 # Set the number of articles in the "Recent articles" widget
+tags_counter = true # Enable counter for each tag in "Tags" widget
+
+[[params.social]]
+	name = "GITHUB"
+    weight = 1
+    url = "https://github.com/diazvictor/"
+
+[[params.social]]
+	name = "GITLAB"
+    weight = 2
+    url = "https://gitlab.com/diazvictor/"

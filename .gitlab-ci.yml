@@ -1,0 +1,11 @@
+image: alpine:latest
+pages:
+  stage: deploy
+  script:
+  - apk update && apk add hugo
+  - hugo -D
+  artifacts:
+    paths:
+    - docs
+  only:
+  - master

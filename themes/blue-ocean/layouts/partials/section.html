@@ -1,0 +1,25 @@
+<section class="section">
+    {{ range first .Site.Params.recent_num .Data.Pages }}
+    {{ if eq .Type "post"}}
+    <article class="box">
+        <header>
+            <a href="{{.RelPermalink}}">
+                <h1 class="title">{{ .Title }}</h1>
+            </a>
+            <i class="fas fa-calendar"></i>&nbsp;<time>{{- .Date.Format (.Site.Params.dateFormat | default "2 January, 2006" ) -}}</time>
+            {{ if .Site.Params.readTime_post }}
+			&nbsp;<i class="fas fa-clock"></i>&nbsp;{{ .ReadingTime }} minute read
+			{{ end }}
+        </header>
+        {{ if .Summary }}
+        <br>
+        {{ .Summary }}
+        <footer>
+            <br>
+            <a href="{{.RelPermalink}}" class="button is-link">Read More &raquo;</a>
+        </footer>
+        {{ end }}
+    </article>
+    {{ end }}
+    {{ end }}
+</section>

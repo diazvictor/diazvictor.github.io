@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+{{- partial "head.html" . -}}
+<body>
+	{{- partial "header.html" . -}}
+	{{ if .Site.Params.sidebar.sidebar }}
+	<div class="columns">
+		<div class="column is-8">
+			<section class="section">
+			    <article class="box">
+					<div class="content">
+						{{- .Content -}}
+					</div>
+			    </article>
+			    {{ if or .NextInSection .PrevInSection }}
+				<nav class="bd-prev-next-bis">
+					{{ if .NextInSection }}
+					<a class="bd-prev-next-bis-previous" href="{{ .NextInSection.Permalink }}" title="{{.NextInSection.Title}}">
+						← {{.NextInSection.Title}}
+					</a>
+					{{ end }}
+					{{ if .PrevInSection }}
+					<a class="bd-prev-next-bis-next" href="{{ .PrevInSection.Permalink }}" title="{{.PrevInSection.Title}}">
+						{{.PrevInSection.Title}} →
+					</a>
+					{{ end }}
+				</nav>
+				{{ end }}
+			</section>
+		</div>
+		{{- partial "sidebar.html" . -}}
+	</div>
+	{{ else }}
+	<section class="section">
+	    <article class="box">
+			<div class="content">
+				{{- .Content -}}
+			</div>
+	    </article>
+	</section>
+	{{ end }}
+	{{- partial "footer.html" . -}}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<h1 class="title is-4">LATEST POSTS</h1>
+{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{- $recent_num := (.Site.Params.widgets.recent_num | default 10) }}
+
+{{- if $recent }}
+<ul>
+	{{- range first $recent_num $recent }}
+    <li><a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a></li>
+    <li><time>{{- .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) -}}</time></li>
+    <div class="has-margin-10" style="margin-bottom: 10px;"></div>
+	{{- end }}
+</ul>
+{{- end }}
+<hr>

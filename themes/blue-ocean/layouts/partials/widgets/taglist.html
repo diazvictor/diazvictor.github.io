@@ -1,0 +1,12 @@
+<h1 class="title is-4">TAGS</h1>
+<div class="field is-grouped is-grouped-multiline">
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    {{ with $.Site.GetPage ( printf "/tags/%s" $name ) }}
+    <div class="control">
+        <div class="tags has-addons">
+            <a href="{{ .Permalink }}" class="tag is-light">{{ $name }}</a>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>

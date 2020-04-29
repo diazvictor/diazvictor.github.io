@@ -1,0 +1,51 @@
+{{ if .IsHome }}
+<script type="text/javascript" src="{{ $.Site.BaseURL }}js/nav-burger.js"></script>
+{{ else }}
+<footer class="footer has-background-info">
+	<div class="content has-text-white">
+		<div class="columns">
+			{{ if .Site.Params.widgets.social_footer }}
+			{{ with .Site.Params.social }}
+			<div class="column is-11">
+				<div class="buttons">
+					{{ range sort . "weight" }}
+					<a href="{{ .url }}" class="button {{ .color }} is-medium">
+						<span class="icon">
+							<i class="{{ .icon }}"></i>
+						</span>
+					</a>
+					{{ end }}
+				</div>
+			</div>
+			{{ end }}
+			{{ end }}
+			{{ with .Site.Params.widgets.scrolltop }}
+			<div class="column is-1 is-hidden-mobile">
+				<div class="buttons is-right">
+					<a href="#top" class="button is-link is-medium btn_top">
+						<span class="icon">
+							<i class="fas fa-chevron-up"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+		<hr>
+		<p>
+			© Raymond Camden all rights reserved.
+			Powered by Eleventy. BlogInn theme by JustGoodThemes
+		</p>
+		{{ with .Site.Params.widgets.scrolltop }}
+		<div class="buttons is-centered is-hidden-tablet">
+			<a href="#top" class="button is-link is-medium btn_top">
+				<span class="icon">
+					<i class="fas fa-chevron-up"></i>
+				</span>
+			</a>
+		</div>
+		{{ end }}
+	</div>
+</footer>
+<script type="text/javascript" src="{{ $.Site.BaseURL }}js/nav-burger.js"></script>
+{{ end }}

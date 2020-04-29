@@ -1,0 +1,22 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Blue Ocean"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Blue Ocean is a responsive, clean and content-focused Hugo theme."
+homepage = "http://diazvictor.github.io/"
+tags = [
+  "blog",
+  "responsive",
+  "clean",
+  "personal",
+  "widgets",
+  "bulma"
+]
+features = ["blog", "responsive", "widgets", "bulma", "personal"]
+min_version = "0.54"
+
+[author]
+  name = "Víctor Eduardo Diex Díaz Urbaneja"
+  homepage = "http://diazvictor.github.io/"

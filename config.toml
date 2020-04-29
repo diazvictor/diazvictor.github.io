@@ -1,0 +1,77 @@
+baseURL = "/"
+languageCode = "es"
+publishDir = "docs"
+title = "diazvictor"
+theme = "blue-ocean"
+
+[params]
+author = "VÍCTOR DÍAZ"
+description = "dedicado al desarrollo web y aplicaciones, enamorado de lua."
+keywords = "blog, developer, personal" # Site keywords.
+info = "DESARROLLO WEB Y APLICACIONES"
+avatar = "/images/favicon.png"
+dateFormat = "2 January, 2006"
+readTime_post = true
+recent_num = 5
+
+[menu]
+	[[menu.item]]
+	name = "BLOG"
+    url = "/post"
+    weight = 1
+
+	[[menu.item]]
+	name = "AYUDA"
+    url = "/about"
+    weight = 2
+
+    [[menu.item]]
+	name = "SERVICIOS"
+    url = "/services"
+    weight = 3
+
+    [[menu.item]]
+	name = "PORTOFOLIO"
+    url = ""
+    weight = 4
+
+    [[menu.item]]
+	name = "CONTACTOS"
+    url = "/contact"
+    weight = 5
+
+[params.sidebar]
+sidebar = true
+widgets = ["aboutbox", "recent", "categories", "taglist"]
+
+[params.widgets]
+aboutbox_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore"
+recent_num = 5 # Set the number of articles in the "Recent articles" widget
+tags_counter = true # Enable counter for each tag in "Tags" widget
+scrolltop = true
+social_footer = true
+
+[[params.social]]
+	name = "GITHUB"
+	icon = "fab fa-github-alt"
+	color = "is-link"
+    weight = 1
+    url = "https://github.com/diazvictor/"
+
+[[params.social]]
+	icon = "fab fa-facebook-f"
+	color = "is-link"
+    weight = 1
+    url = "https://facebook.com/DiazUrbanejaVictor"
+
+[[params.social]]
+	icon = "fab fa-telegram"
+	color = "is-link"
+    weight = 1
+    url = "https://t.me/diazvictor"
+
+[[params.social]]
+	icon = "fas fa-envelope"
+	color = "is-link"
+    weight = 1
+    url = "mailto:victor.vector008@gmail.com"

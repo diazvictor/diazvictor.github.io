@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manual on diazvictor</title>
+    <link>/tags/manual/</link>
+    <description>Recent content in Manual on diazvictor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 24 Apr 2020 13:46:37 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manual basico sobre lua</title>
+      <link>/post/manual-basico-lua/</link>
+      <pubDate>Fri, 24 Apr 2020 13:46:37 -0400</pubDate>
+      
+      <guid>/post/manual-basico-lua/</guid>
+      <description>Manual basico de lua En esta manual aprenderemos lo basico de lua. Vease tambien el manual oficial de lua para mas informacion.
+Acerca de En la actualidad hay muchos lenguajes de programación, siendo posiblemente Java y C++ los más conocidos. Sin embargo, dichos lenguajes de programación pueden ser demasiado difíciles para empezar, debido a la gran cantidad de elementos a tener en cuenta para que un programa pueda ejecutarse, haciéndolos posiblemente puntos de partida un tanto difíciles.</description>
+    </item>
+    
+  </channel>
+</rss>

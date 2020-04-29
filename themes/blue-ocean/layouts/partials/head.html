@@ -1,0 +1,14 @@
+<head>
+    <meta charset="UTF-8">
+    <title>{{if .IsHome}}{{ $.Site.Title }}{{else}}{{.Title}} - {{ $.Site.Title }}{{end}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+    <meta name="keywords" content="{{if .IsHome}}{{ $.Site.Params.keywords }}{{else}}{{.Keywords}}{{end}}">
+	<!-- Bulma -->
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}css/bulma.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}css/custom.css">
+    <!-- Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+</head>
