@@ -31,7 +31,7 @@ recent_num = 5
     weight = 3
 
     [[menu.item]]
-	name = "PORTOFOLIO"
+	name = "PROJECTOS"
     url = ""
     weight = 4
 
@@ -52,11 +52,11 @@ scrolltop = true
 social_footer = true
 
 [[params.social]]
-	name = "GITHUB"
-	icon = "fab fa-github-alt"
+	name = "GITLAB"
+	icon = "fab fa-gitlab"
 	color = "is-link"
     weight = 1
-    url = "https://github.com/diazvictor/"
+    url = "https://gitlab.com/diazvictor/"
 
 [[params.social]]
 	icon = "fab fa-facebook-f"
