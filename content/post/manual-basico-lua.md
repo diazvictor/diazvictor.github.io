@@ -1,6 +1,8 @@
 ---
 title: "Manual basico sobre lua"
+author: "Díaz Urbaneja Víctor Eduardo Diex"
 description: "En esta manual aprenderemos lo basico de lua."
+keywords: ["lua", "manual", "basico", "geany", "textadept", "zerobrane"]
 date: 2020-04-24T13:46:37-04:00
 readTime: true
 categories:

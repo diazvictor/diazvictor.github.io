@@ -6,7 +6,7 @@ disqusShortname = "diazvictor"
 theme = "blue-ocean"
 
 [params]
-author = "VÍCTOR DÍAZ"
+author = "víctor díaz"
 description = "dedicado al desarrollo web y aplicaciones, enamorado de lua."
 copyright = "© 2019 - 2020"
 keywords = "blog, developer, personal" # Site keywords.
