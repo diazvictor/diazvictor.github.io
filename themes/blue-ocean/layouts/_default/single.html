@@ -27,6 +27,7 @@
 				</nav>
 				{{ end }}
 			</section>
+			{{ if eq .Type "post"}}
 		    {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disable_comments | default false) false) -}}
 			<div class="section comments">
 			    <div id="disqus_thread"></div>
@@ -42,6 +43,7 @@
 			    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</div>
 			{{- end -}}
+			{{ end }}
 		</div>
 		{{- partial "sidebar.html" . -}}
 	</div>
