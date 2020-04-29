@@ -17,7 +17,7 @@ recent_num = 5
 
 [menu]
 	[[menu.item]]
-	name = "BLOG"
+	name = "ARTICULOS"
     url = "/post"
     weight = 1
 
@@ -48,7 +48,6 @@ widgets = ["aboutbox", "recent", "categories", "taglist"]
 [params.widgets]
 aboutbox_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore"
 recent_num = 5 # Set the number of articles in the "Recent articles" widget
-tags_counter = true # Enable counter for each tag in "Tags" widget
 scrolltop = true
 social_footer = true
 
