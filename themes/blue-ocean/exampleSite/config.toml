@@ -30,7 +30,7 @@ recent_num = 5
 
     [[menu.item]]
 	name = "PORTOFOLIO"
-    url = ""
+    url = "/project"
     weight = 4
 
     [[menu.item]]
@@ -44,15 +44,48 @@ widgets = ["aboutbox", "recent", "categories", "taglist"]
 
 [params.widgets]
 aboutbox_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore"
-recent_num = 3 # Set the number of articles in the "Recent articles" widget
-tags_counter = true # Enable counter for each tag in "Tags" widget
+recent_num = 5 # Set the number of articles in the "Recent articles" widget
+scrolltop = true
+social_footer = true
 
-[[params.social]]
-	name = "GITHUB"
-    weight = 1
-    url = "https://github.com/diazvictor/"
+[[params.project]]
+	name = "Lua Less Compiler"
+	description = "Lua Less Compiler is a gui frontend for lessc."
+	thumbnail = "lua-less-compiler.png"
+	url = "http://github.com/diazvictor/lua-less-compiler"
+	urlCode = "http://github.com/diazvictor/lua-less-compiler"
+	version = "v0.1.0"
+
+[[params.project]]
+	name = "Chateando"
+	description = "Chateando is a gui frontend for mqtt."
+	thumbnail = "chat-mqtt-lua.png"
+	url = "https://github.com/diazvictor/chat-mqtt-lua"
+	urlCode = "https://github.com/diazvictor/chat-mqtt-lua"
+	version = "v0.1.0"
 
 [[params.social]]
 	name = "GITLAB"
-    weight = 2
-    url = "https://gitlab.com/diazvictor/"
+	icon = "fab fa-gitlab"
+	color = "is-link"
+    weight = 1
+    url = ""
+
+[[params.social]]
+	icon = "fab fa-facebook-f"
+	color = "is-link"
+    weight = 1
+    url = ""
+
+[[params.social]]
+	icon = "fab fa-telegram"
+	color = "is-link"
+    weight = 1
+    url = ""
+
+[[params.social]]
+	icon = "fas fa-envelope"
+	color = "is-link"
+    weight = 1
+    url = ""
+

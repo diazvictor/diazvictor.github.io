@@ -1,5 +1,6 @@
 ---
 title: "CONTACTAME"
 description: ""
-date: 2020-04-27T03:36:35-04:00
 ---
+
+You can contact me through the e-mail: [victor.vector008@gmail.com](victor.vector008@gmail.com)

@@ -19,29 +19,14 @@ recent_num = 5
 
 [menu]
 	[[menu.item]]
-	name = "ARTICULOS"
+	name = "BLOG"
     url = "/post"
     weight = 1
 
 	[[menu.item]]
-	name = "AYUDA"
+	name = "ABOUT"
     url = "/about"
     weight = 2
-
-    [[menu.item]]
-	name = "SERVICIOS"
-    url = "/services"
-    weight = 3
-
-    [[menu.item]]
-	name = "PROJECTOS"
-    url = "/project"
-    weight = 4
-
-    [[menu.item]]
-	name = "CONTACTOS"
-    url = "/contact"
-    weight = 5
 
 [params.sidebar]
 sidebar = true
@@ -53,22 +38,6 @@ recent_num = 5 # Set the number of articles in the "Recent articles" widget
 scrolltop = true
 social_footer = true
 
-[[params.project]]
-	name = "Lua Less Compiler"
-	description = "Lua Less Compiler is a gui frontend for lessc."
-	thumbnail = "lua-less-compiler.png"
-	url = "http://github.com/diazvictor/lua-less-compiler"
-	urlCode = "http://github.com/diazvictor/lua-less-compiler"
-	version = "v0.1.0"
-
-[[params.project]]
-	name = "Chateando"
-	description = "Chateando is a gui frontend for mqtt."
-	thumbnail = "chat-mqtt-lua.png"
-	url = "https://github.com/diazvictor/chat-mqtt-lua"
-	urlCode = "https://github.com/diazvictor/chat-mqtt-lua"
-	version = "v0.1.0"
-
 [[params.social]]
 	name = "GITLAB"
 	icon = "fab fa-gitlab"
@@ -77,10 +46,11 @@ social_footer = true
     url = "https://gitlab.com/diazvictor/"
 
 [[params.social]]
-	icon = "fab fa-facebook-f"
+	name = ""
+	icon = "fab fa-github-alt"
 	color = "is-link"
     weight = 1
-    url = "https://facebook.com/DiazUrbanejaVictor"
+    url = "https://github.com/diazvictor/"
 
 [[params.social]]
 	icon = "fab fa-telegram"
