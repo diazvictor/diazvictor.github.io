@@ -12,7 +12,7 @@
 						{{- .Content -}}
 					</div>
 			    </article>
-			    {{ if eq .Type "posts"}}
+			    {{ if eq .Type "post"}}
 			    {{ if or .NextInSection .PrevInSection }}
 				<nav class="bd-prev-next-bis">
 					{{ if .NextInSection }}
@@ -29,7 +29,7 @@
 				{{ end }}
 				{{ end }}
 			</section>
-			{{ if eq .Type "post"}}
+			{{ if eq .Type "posts"}}
 		    {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disable_comments | default false) false) -}}
 			<div class="section comments">
 			    <div id="disqus_thread"></div>
