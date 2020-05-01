@@ -112,9 +112,9 @@ bastante ligero que fue diseñado como un lenguaje interpretado con una semánti
 
 ### "Hola mundo" en Lua.
 
-```lua
+{{< highlight lua >}}
 print("Hola Mundo")
-```
+{{< /highlight >}}
 
 la función `print`, inprime en pantalla lo que pasemos como parametro.
 

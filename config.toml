@@ -8,11 +8,11 @@ theme = "blue-ocean"
 [params]
 author = "víctor díaz"
 description = "dedicado al desarrollo web y aplicaciones, enamorado de lua."
-copyright = "© 2019 - 2020"
+copyright = "© 2020"
 keywords = "blog, developer, personal" # Site keywords.
 info = "DESARROLLO WEB Y APLICACIONES"
 avatar = "/images/favicon.png"
-mainSections = ["post"]
+mainSections = ["posts"]
 dateFormat = "2 January, 2006"
 readTime_post = true
 recent_num = 5
@@ -20,7 +20,7 @@ recent_num = 5
 [menu]
 	[[menu.item]]
 	name = "BLOG"
-    url = "/post"
+    url = "/posts"
     weight = 1
 
 	[[menu.item]]

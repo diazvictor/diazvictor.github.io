@@ -36,25 +36,6 @@
 					{{ end }}
 					</div>
 				{{ end }}
-                {{ range first .Site.Params.recent_num .Data.Pages }}
-                {{ if eq .Type "project"}}
-                <article class="box">
-                    <header>
-                        <a href="{{.RelPermalink}}">
-                            <h1 class="title">{{ .Title }}</h1>
-                        </a>
-                    </header>
-                    {{ if .Summary }}
-                    <br>
-                    {{ .Summary }}
-                    <footer>
-                        <br>
-                        <a href="{{.RelPermalink}}" class="button is-link">Read More &raquo;</a>
-                    </footer>
-                    {{ end }}
-                </article>
-                {{ end }}
-                {{ end }}
             </section>
 		</div>
 		{{- partial "sidebar.html" . -}}

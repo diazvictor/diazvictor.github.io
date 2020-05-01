@@ -1,6 +1,6 @@
 <section class="section">
     {{ range first .Site.Params.recent_num .Data.Pages }}
-    {{ if eq .Type "post"}}
+    {{ if eq .Type "posts"}}
     <article class="box">
         <header>
             <a href="{{.RelPermalink}}">
