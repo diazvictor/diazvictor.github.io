@@ -29,7 +29,7 @@
 				{{ end }}
 				{{ end }}
 			</section>
-			{{ if eq .Type "posts"}}
+			{{ if eq .Type "post"}}
 		    {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disable_comments | default false) false) -}}
 			<div class="section comments">
 			    <div id="disqus_thread"></div>

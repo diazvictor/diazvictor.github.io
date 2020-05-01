@@ -20,7 +20,7 @@ recent_num = 5
 [menu]
 	[[menu.item]]
 	name = "BLOG"
-    url = "/posts"
+    url = "/post"
     weight = 1
 
 	[[menu.item]]
