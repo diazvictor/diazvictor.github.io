@@ -6,9 +6,9 @@ disqusShortname = "diazvictor"
 theme = "blue-ocean"
 
 [params]
-author = "víctor díaz"
+author = "Víctor Díaz"
 subtitle = "DESARROLLO WEB Y APLICACIONES"
-description = "dedicado al desarrollo web y aplicaciones, enamorado de lua."
+description = "Dedicado al desarrollo web y aplicaciones, enamorado de lua."
 copyright = "© 2020"
 keywords = "blog, developer, personal"
 avatar = "/images/favicon.png"
