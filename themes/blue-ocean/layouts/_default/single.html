@@ -12,7 +12,8 @@
 						{{- .Content -}}
 					</div>
 			    </article>
-			    {{ if eq .Type "post"}}
+				{{- $post := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+			    {{- if $post }}
 			    {{ if or .NextInSection .PrevInSection }}
 				<nav class="bd-prev-next-bis">
 					{{ if .NextInSection }}
@@ -27,9 +28,9 @@
 					{{ end }}
 				</nav>
 				{{ end }}
-				{{ end }}
+				{{- end }}
 			</section>
-			{{ if eq .Type "post"}}
+			{{ if $post }}
 		    {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disable_comments | default false) false) -}}
 			<div class="section comments">
 			    <div id="disqus_thread"></div>

@@ -1,6 +1,8 @@
 <section class="section">
-    {{ range first .Site.Params.recent_num .Data.Pages }}
-    {{ if eq .Type "post"}}
+	{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+	{{- $recent_num := (.Site.Params.recent_num | default 5) }}
+    {{ range first $recent_num $recent }}
+    {{ if $recent }}
     <article class="box">
         <header>
             <a href="{{.RelPermalink}}">

@@ -7,15 +7,15 @@ theme = "blue-ocean"
 
 [params]
 author = "víctor díaz"
+subtitle = "DESARROLLO WEB Y APLICACIONES"
 description = "dedicado al desarrollo web y aplicaciones, enamorado de lua."
 copyright = "© 2020"
-keywords = "blog, developer, personal" # Site keywords.
-info = "DESARROLLO WEB Y APLICACIONES"
+keywords = "blog, developer, personal"
 avatar = "/images/favicon.png"
-mainSections = ["posts"]
+mainSections = ["post"]
 dateFormat = "2 January, 2006"
 readTime_post = true
-recent_num = 5
+recent_num = 3
 
 [menu]
 	[[menu.item]]

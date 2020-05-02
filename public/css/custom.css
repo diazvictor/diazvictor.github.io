@@ -26,6 +26,13 @@
 	height: 2px;
 }
 
+.navbar-item.author {
+	text-transform: uppercase;
+}
+h1.title.author {	
+	text-transform: uppercase;
+}
+
 /*==============================================
 = Paginacion para los articulos
 ==============================================*/
