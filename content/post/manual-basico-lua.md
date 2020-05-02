@@ -584,9 +584,5 @@ print("El resultado es ")
 calculadora(a, op, b)
 {{< /highlight >}}
 
-## Copyright
-- Email: diaz.victor@openmailbox.org
-- Facebook: https://www.facebook.com/DiazUrbanejaVictor
-
 ## NOTA
 tal vez no me explique muy bien que se diga, pero estare puliendo la guía.
