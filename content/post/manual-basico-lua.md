@@ -572,11 +572,11 @@ function calculadora(a, op, b)
     end
 end
 
-print("Introdusca primer valor")
+print("Introduzca primer valor")
 a = io.read()
-print("Introdusca operador")
+print("Introduzca operador")
 op = io.read()
-print("Introdusca tercer valor")
+print("Introduzca tercer valor")
 b = io.read()
 
 print("El resultado es ")
