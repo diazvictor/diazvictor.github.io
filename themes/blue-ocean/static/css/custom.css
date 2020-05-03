@@ -56,7 +56,11 @@ h1.title.author {
     margin-left: auto;
 }
 
-@media screen and (max-width:769px) {	
+.title.is-404 {
+	font-size: 180px;
+}
+
+@media screen and (max-width:769px) {
 	.section.sidebar {
 		padding: 0rem 1.5rem;
 	}
@@ -75,5 +79,23 @@ h1.title.author {
 	.section.sidebar .title + .field.is-grouped.is-grouped-multiline {
 		display: flex;
 		justify-content: center;
+	}
+}
+
+@media screen and (max-width:492px) {
+	.title.is-404 {
+		font-size: 142px;
+	}
+}
+
+@media screen and (max-width:396px) {
+	.title.is-404 {
+		font-size: 122px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.title.is-404 {
+		font-size: 110px;
 	}
 }
