@@ -4,7 +4,7 @@
     {{ with $.Site.GetPage ( printf "/categories/%s" $name ) }}
     <div class="control">
         <div class="tags has-addons">
-            <a href="{{ .Permalink }}" class="tag is-light">{{ $name }}</a>
+            <a href="{{ .Permalink }}" class="tag is-light" style="text-transform: uppercase;">{{ $name }}</a>
         </div>
     </div>
     {{ end }}
