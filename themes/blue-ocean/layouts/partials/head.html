@@ -6,6 +6,7 @@
     <meta name="author" content="{{if .IsHome}}{{ $.Site.Params.author }}{{else}}{{.Params.Author}}{{end}}">
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
     <meta name="keywords" content="{{if .IsHome}}{{ $.Site.Params.keywords }}{{ else if .Keywords }}{{ delimit .Keywords ", " }}{{ else if and .IsPage .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<!-- Bulma -->
     <link rel="stylesheet" href="{{ $.Site.BaseURL }}css/bulma.min.css">
     <!-- Custom Styles -->
