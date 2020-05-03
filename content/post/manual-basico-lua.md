@@ -14,7 +14,7 @@ tags:
 
 # Manual basico de lua
 
-En esta manual aprenderemos lo basico de lua.
+En este manual aprenderemos lo basico de lua.
 Vease tambien el [manual](https://www.lua.org/manual/5.1/es/manual.html) oficial de lua para mas informacion.
 
 ## Acerca de
