@@ -1,22 +1,26 @@
 ---
 title: "Guia Mqtt Desde La Terminal"
 date: 2020-05-02T00:36:27-04:00
+author: "Víctor Díaz"
 description: "Guia basica para conectarse a un servidor Mosquitto/MQTT mediante la linea de comandos."
-tags: ["mqtt", "mosquitto", "protocolos"]
+keywords: ["mqtt", "mosquitto", "guia", "tutoriales"]
+readTime: true
+tags: ["mqtt", "mosquitto", "tutorial"]
 categories: ["Desarrollo"]
 ---
 
 ## Guia basica para conectarse a un servidor Mosquitto/MQTT mediante la linea de comandos.
 
-1. Como subcribirse a la sala
-2. Como publicar en la sala
-3. Tips a seguir para poder publicar
+### Indíce
+1. [Como subcribirse a una sala](#1-como-subcribirse-a-una-sala)
+2. [Como publicar en una sala](#2-como-publicar-en-una-sala)
+3. [Tips a seguir para poder publicar](#3-tips-a-seguir-para-poder-publicar)
 
-### 1. Como subcribirse a la sala
+### 1. Como subcribirse a una sala
 
-Para conectarse debe insetar ciertas lineas de comando.
-
-`mosquitto_sub -P "$contraseña" -u "$user" -h $server -t "$topics"`
+```
+mosquitto_sub -P "$contraseña" -u "$usuario" -h $servidor -t "$topics"
+```
 
 `mosquitto_sub` este comando seria la aplicación para conectarce.
 
@@ -28,11 +32,11 @@ Para conectarse debe insetar ciertas lineas de comando.
 
 `-t` topics (sala) al cual subcribirse.
 
-### 2. Como publicar en la sala
+### 2. Como publicar en una sala
 
-Para publicar en la sala lineas de comando.
-
-`mosquitto_pub -P "$contraseña" -u "$usuario" -h $servidor -m "$mensaje" -t "$topics"`
+```
+mosquitto_pub -P "$contraseña" -u "$usuario" -h $servidor -m "$mensaje" -t "$topics"
+```
 
 `mosquitto_pub` este comando seria la aplicación para poder publicar.
 
@@ -49,4 +53,6 @@ Para publicar en la sala lineas de comando.
 ### 3. Tips a seguir para poder publicar
 
 Para publicar debemos seguir un protocolo (reglas), es de esta manera para poder identificarnos.
-cuando publiquemos debemos poner en el mensaje entre `[]` el nombre del usuario y luego colocamos el mensaje.
+
+Cuando publiquemos debemos colocar entre `[]` el nombre del usuario seguido de dos puntos `:` y luego el mensaje.
+ejemplo: `[diazvictor]: Hola Mundo`
