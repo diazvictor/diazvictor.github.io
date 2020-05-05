@@ -1,15 +1,12 @@
 ---
 title: "Manual basico sobre lua"
-author: "Díaz Urbaneja Víctor Eduardo Diex"
+date: 2020-04-24T13:46:37-04:00
+author: "Víctor Díaz"
 description: "En este manual aprenderemos lo basico de lua."
 keywords: ["lua", "manual", "basico", "geany", "textadept", "zerobrane"]
-date: 2020-04-24T13:46:37-04:00
 readTime: true
-categories:
-  - "Desarrollo"
-tags:
-  - "lua"
-  - "manual"
+tags: ["lua", "manual"]
+categories: ["Desarrollo"]
 ---
 
 # Manual basico de lua
@@ -152,7 +149,9 @@ informacion = {
 
 para acceder a una tabla o arreglo es de la siguiente manera:
 
-`print(informacion.username)`
+```
+print(informacion.username)
+```
 
 busco en la tabla informacion la variable llamada username y imprimo su valor. igual con la tabla arreglo.
 la tabla numeros, contiene tres valores, "uno", "dos" y "tres", para acceder a uno de sus valores,
@@ -370,11 +369,11 @@ end
 {{< /highlight >}}
 
 digamos que tenemos una alarma y lo programamos para que comienze a las 0 horas, y cuando llegue a las 10 horas se detenga
-y suene la alarma, bueno con este ejercicio lo hacemos.
+y suene, bueno con este ejercicio lo hacemos.
 
 la variable estado representa el estado de la alarma en este caso esta encendida, y la variable hora representa la hora en la que
-inicia la alarma, en este caso a las 0 horas, bueno, el bucle se encargara de contar las horas hasta que finalice en este caso
-a las 10 horas, dicho esto cuando el bucle llegue a dicha hora se detendra la alarma y mandara un mensaje.
+inicia la alarma, en este caso a las 0 horas, bueno, el bucle se encargara de contar las horas hasta que finalice, en este caso
+a las 10 horas, dicho esto cuando el bucle llegue a la hora indicada se detendra la alarma y avisara con un mensaje.
 
 Ejercicio:
 
@@ -384,7 +383,7 @@ hora = 0
 
 while (estado) do
 	hora = (hora + 1)
-	print("Son las" .. hora)
+	print("Son las " .. hora)
 	if (hora >= 10) then
 		estado = false
         print("Despierta")
@@ -413,7 +412,7 @@ hora = 0
 
 repeat
     hora = hora + 1
-    print(hora)
+    print("Son las " .. hora)
     if (hora == 10) then
         print("Despierta")
     end
