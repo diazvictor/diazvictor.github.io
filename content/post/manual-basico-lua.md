@@ -409,14 +409,11 @@ Ejercicio:
 
 {{< highlight lua >}}
 hora = 0
-
 repeat
     hora = hora + 1
     print("Son las " .. hora)
-    if (hora == 10) then
-        print("Despierta")
-    end
 until hora == 10
+print("Despierta")
 {{< /highlight >}}
 
 #### For
