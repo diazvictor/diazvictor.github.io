@@ -22,7 +22,7 @@
 			{{ with .Site.Params.widgets.scrolltop }}
 			<div class="column is-1 is-hidden-mobile">
 				<div class="buttons is-right">
-					<a href="#top" class="button is-link is-medium btn_top">
+					<a href="#!" class="button is-link is-medium btn_top">
 						<span class="icon">
 							<i class="fas fa-chevron-up"></i>
 						</span>
@@ -37,7 +37,7 @@
 		</p>
 		{{ with .Site.Params.widgets.scrolltop }}
 		<div class="buttons is-centered is-hidden-tablet">
-			<a href="#top" class="button is-link is-medium btn_top">
+			<a href="#!" class="button is-link is-medium btn_top">
 				<span class="icon">
 					<i class="fas fa-chevron-up"></i>
 				</span>
@@ -47,4 +47,5 @@
 	</div>
 </footer>
 <script type="text/javascript" src="{{ $.Site.BaseURL }}js/nav-burger.js"></script>
+<script type="text/javascript" src="{{ $.Site.BaseURL }}js/back_to_top.js"></script>
 {{ end }}

@@ -10,27 +10,8 @@
 	content: "- ";
 }
 
-.section.comments {
-	padding: 0rem 1.5rem;
-}
-
 .footer {
 	padding: 3rem 1.5rem 2rem;
-}
-
-.navbar-burger.burger {
-	height: 4.25rem;
-}
-
-.navbar-burger span {
-	height: 2px;
-}
-
-.navbar-item.author {
-	text-transform: uppercase;
-}
-h1.title.author {	
-	text-transform: uppercase;
 }
 
 /*==============================================
@@ -56,11 +37,7 @@ h1.title.author {
     margin-left: auto;
 }
 
-.title.is-404 {
-	font-size: 180px;
-}
-
-@media screen and (max-width:769px) {
+@media screen and (max-width:769px) {	
 	.section.sidebar {
 		padding: 0rem 1.5rem;
 	}
@@ -79,23 +56,5 @@ h1.title.author {
 	.section.sidebar .title + .field.is-grouped.is-grouped-multiline {
 		display: flex;
 		justify-content: center;
-	}
-}
-
-@media screen and (max-width:492px) {
-	.title.is-404 {
-		font-size: 142px;
-	}
-}
-
-@media screen and (max-width:396px) {
-	.title.is-404 {
-		font-size: 122px;
-	}
-}
-
-@media screen and (max-width:320px) {
-	.title.is-404 {
-		font-size: 110px;
 	}
 }

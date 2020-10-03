@@ -15,7 +15,7 @@ avatar = "/images/favicon.png"
 mainSections = ["post"]
 dateFormat = "2 January, 2006"
 readTime_post = true
-recent_num = 3
+recent_num = 5
 
 [menu]
 	[[menu.item]]
