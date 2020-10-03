@@ -24,9 +24,9 @@ mosquitto_sub -P "$contraseña" -u "$usuario" -h $servidor -t "$topics"
 
 `mosquitto_sub` este comando seria la aplicación para conectarce.
 
-`-P` contraseña a usar.
+`-P` contraseña a usar. [opcional]
 
-`-u` nombre de usuario.
+`-u` nombre de usuario. [opcional]
 
 `-h` servidor/host al cual conectarce.
 
@@ -40,9 +40,9 @@ mosquitto_pub -P "$contraseña" -u "$usuario" -h $servidor -m "$mensaje" -t "$to
 
 `mosquitto_pub` este comando seria la aplicación para poder publicar.
 
-`-P` contraseña a usar.
+`-P` contraseña a usar. [opcional]
 
-`-u` nombre de usuario.
+`-u` nombre de usuario. [opcional]
 
 `-h` servidor/host al cual conectarce.
 

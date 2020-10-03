@@ -1,5 +1,5 @@
 ---
-title: "Manual basico sobre lua"
+title: "Manual Basico Sobre Lua"
 date: 2020-04-24T13:46:37-04:00
 author: "Víctor Díaz"
 description: "En este manual aprenderemos lo basico de lua."
