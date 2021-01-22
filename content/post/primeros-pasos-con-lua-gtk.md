@@ -1,6 +1,6 @@
 ---
 title: "Primeros pasos con LGI (lua y gtk) | Getting started with LGI (lua and gtk)"
-date: 2020-05-12T21:57:10-04:00
+date: 2021-01-21T23:57:10-04:00
 author: "Víctor Díaz"
 description: "En este tutorial te enseñare a constuir una interfaz con lua y gtk usando la libreria LGI"
 keywords: ["lua", "gtk", "lgi"]
