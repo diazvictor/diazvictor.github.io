@@ -62,16 +62,18 @@ local lgi = require('lgi')
 local Gtk = lgi.require('Gtk', '3.0')
 ```
 
-Al principio, tenemos que requerir la libreria LGI y luego el módulo Gtk para
-poder acceder a las clases y funciones de GTK+. Como el sistema de un usuario
-puede tener varias versiones de GTK+ instaladas al mismo tiempo, queremos asegurarnos
-de que cuando requerimos Gtk se refiere a GTK+ 3 y no a cualquier otra versión de la
-librería, que es el propósito de la sentencia `lgi.require('Gtk', '3.0')`.
+Para disponer de las clases y funciones de GTK+, es necesario primero cargar la
+librería LGI y luego el módulo Gtk. Como el sistema de un usuario puede tener varias
+versiones de GTK+ instaladas al mismo tiempo, queremos asegurarnos de que cuando
+cargamos Gtk se refiere a GTK+ 3 y no a cualquier otra versión de la librería,
+que es el propósito de la sentencia `lgi.require('Gtk', '3.0')`.
 
 La siguiente línea crea una ventana vacía con un titulo, un tamaño de 200 x 200,
 centramos la ventana en el centro de la pantalla y conectamos la ventana al evento
-`on_destroy` (al destruir/cerrar) para asegurarnos de que la aplicación se termina
-si hacemos clic en la x de la ventana.
+`destroy` (que sucede cuando destruimos la ventana o la cerramos) para asegurarnos
+de que la aplicación se termina si hacemos clic en la x de la ventana.
+
+Cabe aclarar que con LGI las señales se conectan con _on_<nombre de la señal>_
 
 ```lua
 window = Gtk.Window {
@@ -92,7 +94,7 @@ window:show_all()
 ```
 
 Por último, iniciamos el bucle de procesamiento de GTK+, del cual saldremos
-cuando la ventana sea cerrada (ver línea 13).
+cuando la ventana sea cerrada (ver línea 15).
 
 ```lua
 Gtk.main()
