@@ -45,7 +45,7 @@ local window = Gtk.Window {
 	title = 'Sample - Window',
 	width = 200,
 	height = 200,
-	window_position = 3,
+	window_position = Gtk.WindowPosition.CENTER,
 	on_destroy = function()
 		Gtk.main_quit()
 	end
@@ -78,7 +78,7 @@ window = Gtk.Window {
 	title = 'Sample - Window', -- titulo
 	width = 200, -- ancho
 	height = 200, -- alto
-	window_position = GTK_WIN_POS_CENTER, -- posición
+	window_position = Gtk.WindowPosition.CENTER, -- posición
 	on_destroy = function() -- evento
 		Gtk.main_quit()
 	end
