@@ -78,7 +78,7 @@ window = Gtk.Window {
 	title = 'Sample - Window', -- titulo
 	width = 200, -- ancho
 	height = 200, -- alto
-	window_position = 3, -- posición
+	window_position = GTK_WIN_POS_CENTER, -- posición
 	on_destroy = function() -- evento
 		Gtk.main_quit()
 	end
