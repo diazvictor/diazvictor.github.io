@@ -104,3 +104,56 @@ ingrese el comando:
 ```sh
 lua sample-window.lua
 ```
+
+## Ejemplo Extendido
+
+```lua
+local lgi = require("lgi")
+local Gtk = lgi.require("Gtk", "3.0")
+local MyWindow = Gtk.Window:derive("MyWindow")
+
+function MyWindow:_init()
+	self.title = "Hello World"
+
+	local button = Gtk.Button({ label = "Click Here" })
+	function button:on_clicked()
+		print("Hello World")
+	end
+	self:add(button)
+end
+
+local window = MyWindow()
+window.on_destroy = Gtk.main_quit
+window:show_all()
+
+Gtk.main()
+```
+
+A diferencia del ejemplo simple, aquí creamos una sub-clase de `Gtk.Window` para
+definir nuestra propia clase `MyWindow`.
+
+```lua
+local MyWindow = Gtk.Window:derive("MyWindow")
+```
+
+En el constructor de la clase, le diremos que dé el valor de `Hello World` a la
+propiedad `title`.
+
+```lua
+	self.title = "Hello World"
+```
+
+Las próximas tres líneas son usadas para crear un botón (_[widget](http://es.wikipedia.org/wiki/Widget)_),
+conectarlo a su señal `clicked`, y adicionarlo como hijo a la ventana.
+
+```lua
+local button = Gtk.Button({ label = "Click Here" })
+function button:on_clicked()
+	print("Hello World")
+end
+self:add(button)
+```
+
+El último bloque, fuera de la clase, es muy similar al del ejemplo simple de más
+arriba, pero en lugar de crear una instancia de la cláse genérica `Gtk.Window`,
+creamos una instancia de `MyWindow`.
