@@ -62,7 +62,7 @@ local lgi = require('lgi')
 local Gtk = lgi.require('Gtk', '3.0')
 ```
 
-Al principio, tenemos que requerir la libreria Lgi y luego el módulo Gtk para
+Al principio, tenemos que requerir la libreria LGI y luego el módulo Gtk para
 poder acceder a las clases y funciones de GTK+. Como el sistema de un usuario
 puede tener varias versiones de GTK+ instaladas al mismo tiempo, queremos asegurarnos
 de que cuando requerimos Gtk se refiere a GTK+ 3 y no a cualquier otra versión de la
