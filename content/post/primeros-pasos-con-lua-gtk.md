@@ -109,6 +109,9 @@ lua sample-window.lua
 
 ## Ejemplo Extendido
 
+Para algo un poco más útil, aquí está la vesión en LGI del clásico
+programa _Hello World_.
+
 ```lua
 local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
