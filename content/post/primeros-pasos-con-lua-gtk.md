@@ -140,7 +140,7 @@ En el constructor de la clase, le diremos que dé el valor de `Hello World` a la
 propiedad `title`.
 
 ```lua
-	self.title = "Hello World"
+self.title = "Hello World"
 ```
 
 Las próximas tres líneas son usadas para crear un botón (_[widget](http://es.wikipedia.org/wiki/Widget)_),
