@@ -46,7 +46,7 @@ social_footer = true
     url = "https://gitlab.com/diazvictor/"
 
 [[params.social]]
-	name = ""
+	name = "GITHUB"
 	icon = "fab fa-github-alt"
 	color = "is-link"
     weight = 1
