@@ -12,7 +12,7 @@ jobs:
       - name: Git checkout
       - uses: actions/checkout@v2
       - name: Update theme
-        run: git submodule update --init --recursive
+        uses: textbook/git-checkout-submodule-action@master
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
