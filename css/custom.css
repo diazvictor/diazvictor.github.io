@@ -6,6 +6,14 @@
  * @date      28.04.2020 15:08:51 -04
  */
 
+.navbar.is-transparent .container > .navbar-brand > a.navbar-item:first-child:hover {
+    background: none;
+}
+
+.title.is-404 {
+	font-size: 6rem;
+}
+
 .section.sidebar .title:before {
 	content: "- ";
 }
