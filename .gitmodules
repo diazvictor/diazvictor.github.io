@@ -1,0 +1,3 @@
+[submodule "themes/blue-ocean"]
+	path = themes/blue-ocean
+	url = https://github.com/diazvictor/blue-ocean.git
