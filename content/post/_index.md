@@ -1,4 +1,4 @@
 ---
-title: "ARTICULOS"
-description: ""
+title: "Articulos"
+description: "Mis Articulos"
 ---
