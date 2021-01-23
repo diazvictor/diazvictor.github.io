@@ -33,7 +33,7 @@ sidebar = true
 widgets = ["aboutbox", "recent", "categories", "taglist"]
 
 [params.widgets]
-aboutbox_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore"
+aboutbox_description = "Desarrollador web y desktop con conocimientos (backend/frontend) en lenguajes Lua, Php, SQL (SQLite, MySQL), HTML, CSS y Javascript."
 recent_num = 5 # Set the number of articles in the "Recent articles" widget
 scrolltop = true
 social_footer = true
