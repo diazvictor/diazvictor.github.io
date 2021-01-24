@@ -5,6 +5,16 @@ title = "diazvictor"
 disqusShortname = "diazvictor"
 theme = "blue-ocean"
 
+[markup]
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokailight"
+    tabWidth = 4
+
 [params]
 author = "Víctor Díaz"
 subtitle = "DESARROLLO WEB Y APLICACIONES"
