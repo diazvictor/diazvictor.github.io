@@ -8,7 +8,7 @@
 Luego, extenderemos el script para agregarle un botón que realiza una determinada acción.</p><p>Antes de comenzar, recomiendo los siguientes documentos para que podamos aprender
 un poco más sobre LGI:</p><ul><li><a href=https://github.com/pavouk/lgi/blob/master/docs/overview.md>https://github.com/pavouk/lgi/blob/master/docs/overview.md</a></li><li><a href=https://github.com/pavouk/lgi/blob/master/docs/guide.md>https://github.com/pavouk/lgi/blob/master/docs/guide.md</a></li><li><a href=https://github.com/pavouk/lgi/blob/master/docs/gtk.md>https://github.com/pavouk/lgi/blob/master/docs/gtk.md</a></li></ul><p>Puedes instalar lgi usando LuaRocks:</p><pre><code>luarocks install lgi
 </code></pre><p>O con el gestor de paquetes de tu distro (si está disponible).</p><h2 id=ejemplo-simple>Ejemplo Simple</h2><p>Para comenzar con nuestro tutorial crearemos el ejemplo más simple posible.
-Este programa creará una ventana vacía de 200 x 200 píxeles.</p><p>Primero crearemos un archivo de nombre <code>sample-window.lua</code>
+Este programa creará una ventana vacía de 200 x 200 píxeles.</p><p><img src=/images/post/primeros-pasos-con-lua-gtk/screen1.jpg alt=simple-window.lua></p><p>Primero crearemos un archivo de nombre <code>sample-window.lua</code>
 con el siguiente codigo:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> lgi <span style=color:#f92672>=</span> require(<span style=color:#e6db74>&#39;lgi&#39;</span>)
 <span style=color:#66d9ef>local</span> Gtk <span style=color:#f92672>=</span> lgi.require(<span style=color:#e6db74>&#39;Gtk&#39;</span>, <span style=color:#e6db74>&#39;3.0&#39;</span>)
 
@@ -48,7 +48,7 @@ cuando la ventana sea cerrada (ver línea 15).</p><div class=highlight><pre styl
 </code></pre></div><p>Para ejecutar el programa, abra una terminal, cambie al directorio del archivo y
 ingrese el comando:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>lua sample-window.lua
 </code></pre></div><h2 id=ejemplo-extendido>Ejemplo Extendido</h2><p>Para algo un poco más útil, aquí está la vesión en LGI del clásico
-programa <em>Hello World</em>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> lgi <span style=color:#f92672>=</span> require(<span style=color:#e6db74>&#34;lgi&#34;</span>)
+programa <em>Hello World</em>.</p><p><img src=/images/post/primeros-pasos-con-lua-gtk/screen2.jpg alt=hello-world.lua></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> lgi <span style=color:#f92672>=</span> require(<span style=color:#e6db74>&#34;lgi&#34;</span>)
 <span style=color:#66d9ef>local</span> Gtk <span style=color:#f92672>=</span> lgi.require(<span style=color:#e6db74>&#34;Gtk&#34;</span>, <span style=color:#e6db74>&#34;3.0&#34;</span>)
 <span style=color:#66d9ef>local</span> MyWindow <span style=color:#f92672>=</span> Gtk.Window:derive(<span style=color:#e6db74>&#34;MyWindow&#34;</span>)
 
