@@ -34,6 +34,8 @@ O con el gestor de paquetes de tu distro (si está disponible).
 Para comenzar con nuestro tutorial crearemos el ejemplo más simple posible.
 Este programa creará una ventana vacía de 200 x 200 píxeles.
 
+![simple-window.lua](/images/post/primeros-pasos-con-lua-gtk/screen1.jpg)
+
 Primero crearemos un archivo de nombre `sample-window.lua`
 con el siguiente codigo:
 
@@ -111,6 +113,8 @@ lua sample-window.lua
 
 Para algo un poco más útil, aquí está la vesión en LGI del clásico
 programa _Hello World_.
+
+![hello-world.lua](/images/post/primeros-pasos-con-lua-gtk/screen2.jpg)
 
 ```lua
 local lgi = require("lgi")
