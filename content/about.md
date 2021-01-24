@@ -1,22 +1,23 @@
 ---
-title: "SOBRE MI"
+title: "Sobre mi"
 description: "Jack de todos los oficios, maestro de 'algunos'"
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+![Header](https://github.com/diazvictor/diazvictor/blob/main/header.png?raw=true)
 
-Hugo makes use of a variety of open source projects including:
+Un entusiasta de la tecnología dedicado al desarrollo de aplicaciones (web/desktop), enamorado de lua.
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+## ⚡ Un poco más sobre mí
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+{{< highlight lua >}}
+-- Esta tabla contiene un poco más sobre mí
+local diazvictor = {
+	languages = {'Javascript', 'Lua', 'PHP', 'HTML', 'CSS', 'SQLite'},
+	tools = {'Glade', 'GTK+', 'JQuery', 'Bulma', 'MDUI', 'Semantic UI'}
+	editors = {'Geany', 'Textadept'},
+	tech_communities = {
+		'Moonsteal', 'Luachi', 'HarvestOrDie'
+	},
+	challenge = 'Estoy haciendo el reto #100DaysOfCode centrado en el desarrollo de aplicaciones (web/desktop) con lua o php.'
+}
+{{< /highlight >}}
