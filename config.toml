@@ -11,8 +11,7 @@ theme = "blue-ocean"
     codeFences = true
     lineNos = false
     lineNumbersInTable = true
-    noClasses = true
-    style = "monokailight"
+    noClasses = false
     tabWidth = 4
 
 [params]
