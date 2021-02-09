@@ -10,16 +10,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: Update theme
-        shell: bash
-        run: |
-          git config --global user.email "diazvictor@users.noreply.github.com"
-          git config --global user.name "diazvictor"
-          git submodule update --init --remote
-          git add .
-          git commit -am "[Bot] Update theme"
-          git push --force-with-lease
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
