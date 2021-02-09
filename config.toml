@@ -18,7 +18,7 @@ theme = "blue-ocean"
 author = "Víctor Díaz"
 subtitle = "DESARROLLO WEB Y APLICACIONES"
 description = "Dedicado al desarrollo web y aplicaciones, enamorado de lua."
-copyright = "© 2020"
+copyright = "© 2021"
 keywords = "blog, developer, personal"
 avatar = "/images/favicon.png"
 mainSections = ["post"]
@@ -42,7 +42,7 @@ sidebar = true
 widgets = ["aboutbox", "recent", "categories", "taglist"]
 
 [params.widgets]
-aboutbox_description = "Desarrollador web y desktop con conocimientos (backend/frontend) en lenguajes Lua, Php, SQL (SQLite, MySQL), HTML, CSS y Javascript."
+aboutbox_description = "Desarrollador web y desktop con conocimientos (backend/frontend) en lenguajes Lua, Php, SQL (SQLite), HTML, CSS y Javascript."
 recent_num = 5 # Set the number of articles in the "Recent articles" widget
 scrolltop = true
 social_footer = true
