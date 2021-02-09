@@ -1,0 +1,221 @@
+<!doctype html><html><head><meta charset=utf-8><title>Manual Basico Sobre Lua - diazvictor</title><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=author content="Víctor Díaz"><meta name=description content="En este manual aprenderemos lo basico de lua."><meta name=keywords content="lua,manual,basico,geany,textadept,zerobrane"><link rel="shortcut icon" href=images/favicon.png type=image/x-icon><link rel=stylesheet href=/css/bulma.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/custom-dark.css><link rel=stylesheet href=/css/all.min.css></head><body><header class="hero is-info is-fullheight"><div class=hero-head><nav class="navbar is-transparent"><div class=container><div class=navbar-brand><a href=/ class="navbar-item is-size-3 is-uppercase">Víctor Díaz</a>
+<span class="navbar-burger burger" data-target=navbarMenuHeroB><span></span><span></span><span></span></span></div><div class=navbar-menu><div class=navbar-end><a href=/post class=navbar-item>BLOG</a>
+<a href=/about class=navbar-item>ABOUT</a><div class=navbar-item><a id=toggle-theme class="button is-info is-rounded is-hovered is-medium" title="Dark mode"><span class=icon><i class="fas fa-moon"></i></span></a></div></div></div></div></nav></div><div class=hero-body><div class=container><h1 class="title is-1">Manual Basico Sobre Lua</h1><h2 class=subtitle><i class="fas fa-calendar"></i>&nbsp;24 April, 2020&nbsp;&nbsp;&nbsp;
+<i class="fas fa-clock"></i>&nbsp;14 minute read</h2><a href=https://diazvictor.github.io/tags/lua/ class="tag is-light">lua</a>
+<a href=https://diazvictor.github.io/tags/manual/ class="tag is-light">manual</a><br><br><p>En este manual aprenderemos lo basico de lua.</p></div></div></header><div id=content><div class=columns><div class="column is-8"><section class=section><article class=box><div class=content><h1 id=manual-basico-de-lua>Manual basico de lua</h1><p>En este manual aprenderemos lo basico de lua.
+Vease tambien el <a href=https://www.lua.org/manual/5.1/es/manual.html>manual</a> oficial de lua para mas informacion.</p><h2 id=acerca-de>Acerca de</h2><p>En la actualidad hay muchos lenguajes de programación, siendo posiblemente Java y C++ los más conocidos. Sin embargo, dichos
+lenguajes de programación pueden ser demasiado difíciles para empezar, debido a la gran cantidad de elementos a tener en cuenta
+para que un programa pueda ejecutarse, haciéndolos posiblemente puntos de partida un tanto difíciles.</p><p>Lua, en cambio, es un lenguaje mucho más sencillo de aprender y que puede ser un mejor punto de partida, debido a que necesita
+menos líneas de código para poder funcionar. Para ello vamos a mostrar el código de una frase en tres lenguajes diferentes.</p><p>&ldquo;Hola Mundo&rdquo; en C++:<div class=highlight><pre class=chroma><code class=language-c data-lang=c><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span><span class=cp></span><span class=n>using</span> <span class=n>namespace</span> <span class=n>std</span><span class=p>;</span>
+
+<span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Hola Mundo &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+<span class=p>}</span></code></pre></div></p><p>&ldquo;Hola Mundo&rdquo; en Java:</p><div class=highlight><pre class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kd>class</span> <span class=nc>HolaMundo</span> <span class=o>{</span>
+    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>HolaMundo</span><span class=o>(</span><span class=n>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+        <span class=n>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>print</span><span class=o>(</span><span class=s>&#34;Hola Mundo&#34;</span><span class=o>);</span>
+    <span class=o>}</span>
+<span class=o>}</span></code></pre></div><p>&ldquo;Hola Mundo&rdquo; en Lua:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>print</span><span class=p>(</span><span class=s2>&#34;Hola Mundo&#34;</span><span class=p>)</span></code></pre></div><h2 id=versiones>Versiones</h2><p>Como cualquier lenguaje de programación interpretado, Lua evoluciona constantemente, estos cambios se distribuyen en versiones,
+actualmente las versiones mas populares son la 5.0, 5.1, 5.2 y 5.3, personalmente prefiero la versión 5.1 que es una de las mas
+extendidas.</p><h2 id=instalación>Instalación</h2><p>Debido a su gran popularidad del lenguaje su interprete se encuentra en la mayoría de las distribuciones de Linux.</p><p>Por lo que para su instalación pueden instalarlo con alguno de los siguientes comandos acorde a su distribución que estén utilizando.</p><p>Para los que son usuarios de Debian, Ubuntu, Linux Mint o cualquier sistema derivado de estos, solamente debemos de abrir una terminal y ejecutar en ella el siguiente comando:</p><p><code>sudo apt install lua5.1</code></p><p>Si son usuarios de Arch Linux, Manjaro, Antergos o cualquier distribución derivada de Arch Linux, podemos instalar el interprete desde los repositorios de AUR, para ello solamente debemos de teclear:</p><p><code>aurman -S lua</code></p><p>Mientras que para los que son usuarios de CentOS, RHEL, Fedora o cualquier distribución derivada de estas, lo podemos instalar con:</p><p><code>sudo dnf install lua</code></p><p>Comprobamos si esta instalado ejecutando en la consola (terminal):</p><p><code>lua</code></p><p>la salida seria algo como esto:</p><pre><code>Lua 5.1.5  Copyright (C) 1994-2012 Lua.org, PUC-Rio
+&gt;
+</code></pre><p>tambien puede crear un archivo cuya extencion seria .lua
+para ejecutar dicho archivo seria de esta manera:</p><p><code>lua archivo.lua</code></p><h2 id=recomendaciones>Recomendaciones</h2><p>Para empezar a estudiar lua, recomiendo usar uno de los siguientes editores :</p><ul><li><a href=https://foicica.com/textadept/>Textadept</a> esta escrito en lua, por lo que esta orientado a la programacion de dicho lenguaje, lo uso para hacer script rapidos</li><li><a href=geany.org>Geany IDE</a> es un buen IDE rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a lua, hice unas configuraciones para lua y la verdad quedo de maravilla, lo uso mas que todo para projectos grandes.</li><li><a href=http://example.net/>ZeroBrane</a>,creo es el mejor de todos ya que es un IDE que tiene todo lo que nesecitas para programar en lua</li></ul><h2 id=que-podemos-hacer-con-lua>¿Que podemos hacer con lua?</h2><p>Con lua podemos hacer desde aplicaciones de escritorio y paginas web hasta juegos.</p><h2 id=sintaxis>Sintaxis</h2><p>Lua es un lenguaje de programación imperativo, estructurado y
+bastante ligero que fue diseñado como un lenguaje interpretado con una semántica extendible.</p><h3 id=hola-mundo-en-lua>&ldquo;Hola mundo&rdquo; en Lua.</h3><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>print</span><span class=p>(</span><span class=s2>&#34;Hola Mundo&#34;</span><span class=p>)</span></code></pre></div><p>la función <code>print</code>, inprime en pantalla lo que pasemos como parametro.</p><h3 id=comentarios>Comentarios</h3><p>Los comentarios en lua son los siguientes:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=c1>-- Esto es un comentario de una linea</span>
+
+<span class=cm>--[[
+</span><span class=cm> Este es un comentario multi linea
+</span><span class=cm>]]</span><span class=c1>--</span></code></pre></div><h3 id=variables>Variables</h3><p>Una variable es una palabra que almacena un valor.</p><p><code>variable = valor</code></p><p>en <code>lua</code> hay variables locales, globales y tablas.</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>variable</span> <span class=o>=</span> <span class=s2>&#34;global&#34;</span> <span class=c1>-- lua reconoce todas las variables como globales a no ser, que la variable este declarada como local de esta manera</span>
+<span class=kd>local</span> <span class=n>variable</span> <span class=o>=</span> <span class=s2>&#34;local o privada&#34;</span>
+<span class=c1>-- arreglo o tabla simple</span>
+<span class=n>numeros</span> <span class=o>=</span> <span class=p>{</span><span class=s2>&#34;uno&#34;</span><span class=p>,</span><span class=s2>&#34;dos&#34;</span><span class=p>,</span><span class=s2>&#34;tres&#34;</span><span class=p>}</span> <span class=c1>-- valores</span>
+<span class=c1>-- arreglo asosiativo</span>
+<span class=n>informacion</span> <span class=o>=</span> <span class=p>{</span>
+    <span class=n>username</span> <span class=o>=</span> <span class=s2>&#34;diazvictor&#34;</span><span class=p>,</span>
+    <span class=n>email</span> <span class=o>=</span> <span class=s2>&#34;diaz.victor@openmailbox.org&#34;</span>
+<span class=p>}</span></code></pre></div><p>para acceder a una tabla o arreglo es de la siguiente manera:</p><pre><code>print(informacion.username)
+</code></pre><p>busco en la tabla informacion la variable llamada username y imprimo su valor. igual con la tabla arreglo.
+la tabla numeros, contiene tres valores, &ldquo;uno&rdquo;, &ldquo;dos&rdquo; y &ldquo;tres&rdquo;, para acceder a uno de sus valores,
+<code>numeros[1]</code>, numeros es la tabla y entre &ldquo;corchetes&rdquo; la posicion del valor.</p><h3 id=tipos-de-datos>Tipos de datos</h3><p>Lua es un lenguaje dinámicamente tipado. Esto significa que las variables no tienen tipos; sólo tienen tipo
+los valores. No existen definiciones de tipo en el lenguaje. Todos los valores almacenan su propio tipo.</p><p>Todos los valores en Lua son valores de primera clase. Esto significa que todos ellos pueden ser
+almacenados en variables, pueden ser pasados como argumentos de funciones, y también ser devueltos
+como resultados.</p><p>En lua hay 8 tipos, pero veremos 6:<em>nil</em>,<em>boolean</em>,<em>number</em>,<em>string</em>,<em>function</em>,<em>table</em>. Nil es el
+tipo del valor nil, cuya principal propiedad es ser diferente de cualquier otro valor; normalmente representa
+la ausencia de un valor útil.El valor Boolean es false (falso) y true (verdadero). Tanto nil como
+false hacen una condición falsa; Number representa números reales (en coma flotante y doble precision).
+String representa una tira de caracteres. Lua trabaja con 8 bits: los strings pueden contener
+cualquier carácter de 8 bits, incluyendo el carácter cero (0).</p><p>veamos un ejemplo usando variables:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=c1>-- tipo string</span>
+<span class=n>nombre</span> <span class=o>=</span> <span class=s2>&#34;Victor Díaz&#34;</span>
+<span class=c1>-- tipo number</span>
+<span class=n>edad</span> <span class=o>=</span> <span class=mi>16</span>
+<span class=n>nombre_completo</span> <span class=o>=</span> <span class=n>nombre</span> <span class=o>..</span> <span class=s2>&#34; tiene&#34;</span> <span class=o>..</span> <span class=n>edad</span> <span class=o>..</span> <span class=s2>&#34; años&#34;</span> <span class=c1>-- los dos puntos (..) sirven para unir cadenas de caracteres con variables</span>
+<span class=c1>-- tipo boolean</span>
+<span class=n>masculino</span> <span class=o>=</span> <span class=kc>true</span>
+<span class=c1>-- tipo nil o nulo</span>
+<span class=n>alien</span> <span class=o>=</span> <span class=kc>nil</span>
+<span class=c1>-- tipo float</span>
+<span class=n>decimal</span> <span class=o>=</span> <span class=mf>1730.3</span>
+<span class=c1>-- tipo table/array</span>
+<span class=n>estados</span> <span class=o>=</span> <span class=p>{</span>
+    <span class=s2>&#34;Bolivar&#34;</span><span class=p>,</span> 
+    <span class=s2>&#34;Carabobo&#34;</span><span class=p>,</span> 
+    <span class=s2>&#34;Miranda&#34;</span><span class=p>,</span> 
+    <span class=s2>&#34;Zulia&#34;</span><span class=p>,</span> 
+    <span class=s2>&#34;Trujillo&#34;</span><span class=p>,</span> 
+    <span class=s2>&#34;Apure&#34;</span>
+<span class=p>}</span></code></pre></div><p>para comprobar que las variables son del tipo especificado usamos la funcion interna de lua <code>type</code>, que retorna un string que
+describe el tipo de un valor dado.</p><p>veamos un ejemplo:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>print</span><span class=p>(</span><span class=n>type</span><span class=p>(</span><span class=n>nombre</span><span class=p>))</span>
+</code></pre></div><p>si colocamos la variable nombre, la salida sera la siguiente:</p><pre><code>string
+</code></pre><p>y asi puedes probar con las de mas variables.</p><h2 id=operadores>Operadores.</h2><h3 id=operadores-aritméticos>Operadores aritméticos.</h3><p>Son aquellos que permiten realizar operaciones matemáticas básicas, Lua tiene, los operadores aritméticos comunes:</p><table><thead><tr><th>Operador</th><th>Propósito</th></tr></thead><tbody><tr><td>+</td><td>adición</td></tr><tr><td>-</td><td>substracción</td></tr><tr><td>*</td><td>multiplicación</td></tr><tr><td>/</td><td>división</td></tr><tr><td>//</td><td>división de piso</td></tr><tr><td>%</td><td>modulo</td></tr><tr><td>-</td><td>Negación (Unario)</td></tr></tbody></table><h3 id=operadores-logicos>Operadores logicos.</h3><p>Los operadores lógicos en Lua son and, or y not. Como las estructuras de control todos los operadores lógicos consideran false
+y nil como falso y todo lo demás como verdadero.</p><p>El operador negación not siempre retorna false o true. El operador conjunción and retorna su primer operando si su valor
+es false o nil; en caso contrario and retorna su segundo operando. El operador disyunción or retorna su primer
+operando si su valor es diferente de nil y false; en caso contrario or retorna su segundo argumento.
+Tanto and como or usan evaluación de cortocircuito; esto es, su segundo operando se evalúa sólo si es necesario.</p><table><thead><tr><th>Operadores</th></tr></thead><tbody><tr><td>and</td></tr><tr><td>or</td></tr><tr><td>not</td></tr></tbody></table><p>vease tambien <a href=https://es.wikipedia.org/wiki/Tabla_de_verdad>tabla de la verdad de operadores logicos</a></p><h3 id=operadores-relacionales>Operadores relacionales.</h3><p>Los operadores relacionales son usados para comparar dos valores, si la exprecion evaluada es correcta dará
+un resultado true (verdadero) de lo contrario sera false (falsa).
+Los operadores relacionales en Lua son:</p><table><thead><tr><th>Operadores</th><th>Uso</th><th>Nombre</th><th>Descripción</th></tr></thead><tbody><tr><td>==</td><td>1 == &ldquo;texto&rdquo;</td><td>Igualdad</td><td>1 es igual a &ldquo;texto&rdquo;, no por que 1 es un valor de tipo number y &ldquo;texto&rdquo; es un valor de tipo &ldquo;string&rdquo;, por lo tanto retorna un valor booleano en este caso false.</td></tr><tr><td>></td><td>3 > 2</td><td>Mayor que</td><td>3 es mayor que 2, si por lo tanto retorna true.</td></tr><tr><td>&lt;</td><td>5 &lt; 9</td><td>Menor que</td><td>5 es menor que 9, por lo tanto retorna true.</td></tr><tr><td>>=</td><td>7 >= 7</td><td>Mayor o igual</td><td>7 es mayor que 7, no pero si es igual, por lo tanto retorna true.</td></tr><tr><td>&lt;=</td><td>9 &lt;= 6</td><td>Menor o igual</td><td>9 es menor que 6 o igual, no por lo tanto retorna false.</td></tr><tr><td>~=</td><td>1 ~= &ldquo;texto&rdquo;</td><td>Diferente</td><td>1 es diferente a &ldquo;texto&rdquo; que es un valor de tipo &ldquo;string&rdquo;, si por lo tanto retorna true.</td></tr></tbody></table><h2 id=estructuras-de-control>Estructuras de control</h2><p>Las estructuras de control if, while y repeat tienen el significado habitual.</p><p>Lua tiene también una sentencia for, en dos formatos.</p><h3 id=condicionales>Condicionales</h3><p>Para crear una condicional se utiliza la palabra reservada <code>if</code>.</p><p>ejemplo de sintaxis:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>if</span> <span class=p>(</span> <span class=n>condicion</span> <span class=p>)</span> <span class=kr>then</span>
+    <span class=p>...</span>
+<span class=kr>end</span></code></pre></div><p>Si la condición se cumple (es decir, si su valor es true) se ejecutan todas las instrucciones que se encuentran
+dentro del bloque {&mldr;}. Si la condición no se cumple (es decir, si su valor es false) no se ejecuta ninguna instrucción
+contenida en {&mldr;} y el programa continúa ejecutando el resto de instrucciones del script.</p><p>Ejercicio:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>edad</span> <span class=o>=</span> <span class=mi>16</span>
+
+<span class=kr>if</span> <span class=n>edad</span> <span class=o>==</span> <span class=mi>16</span> <span class=kr>then</span>
+    <span class=n>print</span> <span class=s2>&#34;Tengo 16 años de edad.&#34;</span>
+<span class=kr>else</span>
+    <span class=n>print</span> <span class=s2>&#34;No tengo 16 años&#34;</span>
+<span class=kr>end</span>
+
+<span class=n>edad</span> <span class=o>=</span> <span class=mi>12</span>
+
+<span class=kr>if</span> <span class=p>(</span><span class=n>edad</span> <span class=o>==</span> <span class=mi>16</span><span class=p>)</span> <span class=kr>then</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Tengo &#34;</span> <span class=o>..</span> <span class=n>edad</span> <span class=o>..</span> <span class=s2>&#34; años de edad.&#34;</span><span class=p>)</span>
+<span class=kr>else</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;No tengo &#34;</span> <span class=o>..</span> <span class=n>edad</span> <span class=o>..</span> <span class=s2>&#34; años.&#34;</span><span class=p>)</span>
+<span class=kr>end</span></code></pre></div><p>El if comprueba si se cumple la condición (que puede estar entre paréntesis) e imprime en la pantalla (a través de una consola)
+lo que hay debajo del if (el cuerpo), en caso contrario imprime lo que hay debajo de else (el cuerpo),
+que viene a decir &ldquo;si no&rdquo;. Como ves, los valores se asignan a las variables a través de un solo igual (=), mientras que
+para comprobar en las condicionantes hay que usar forzosamente doble igual (==). Además del doble igual, también se puede
+comparar utilizando mayor (>), menor (&lt;), mayor o igual (>=), menor o igual (&lt;=) y distinto (~=).</p><p>Se pueden establecer varias condiciones a la vez, pudiendo utilizar and, or y not.</p><p>Elaboraremos un script que me simule una clave de acceso. Si el usuario es: &ldquo;admin&rdquo; y la clave &ldquo;123456&rdquo; mostrara el mensaje &ldquo;acceso permitido&rdquo; caso contrario mostrara el mensaje &ldquo;acceso denegado&rdquo;.</p><p>usaremos las funciones <code>print</code> y <code>io.read</code>, con <code>print</code> imprimimos en pantalla lo que se le pase como parametro y con <code>io.read</code>
+escribiremos en patalla.</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=c1>-- @Nota: la tilde no puede estar en una variable</span>
+
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Usuario:&#34;</span><span class=p>)</span>
+<span class=n>usuario</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span> <span class=c1>-- lo que insertemos cuando pida el nombre de usuario, lo guardamos en la variable usuario.</span>
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Contraseña:&#34;</span><span class=p>)</span>
+<span class=n>contrasena</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span> <span class=c1>-- lo que insertemos cuando pida la contraseña de usuario, lo guardamos en la variable contrasena.</span>
+
+<span class=kr>if</span> <span class=p>(</span> <span class=n>usuario</span> <span class=o>==</span> <span class=s2>&#34;admin&#34;</span> <span class=p>)</span> <span class=ow>and</span> <span class=p>(</span><span class=n>contrasena</span> <span class=o>==</span> <span class=s2>&#34;123456&#34;</span><span class=p>)</span> <span class=kr>then</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;acceso permitido&#34;</span><span class=p>)</span>
+<span class=kr>else</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;acceso denegado&#34;</span><span class=p>)</span>
+<span class=kr>end</span></code></pre></div><p>ahora podemos hacer que cuando ingresen el usuario de &ldquo;admin&rdquo; pero la &ldquo;contrasena&rdquo; que imprima en pantalla &ldquo;acceso denegado, su contraseña no es valida&rdquo;
+y al reves con &ldquo;contrasena&rdquo; y &ldquo;admin&rdquo; con otra condicion llamada elseif que ya la veremos:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>print</span><span class=p>(</span><span class=s2>&#34;Usuario:&#34;</span><span class=p>)</span>
+<span class=n>usuario</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span> <span class=c1>-- lo que insertemos cuando pida el nombre de usuario, lo guardamos en la variable usuario.</span>
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Contraseña:&#34;</span><span class=p>)</span>
+<span class=n>contrasena</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span> <span class=c1>-- lo que insertemos cuando pida la contraseña de usuario, lo guardamos en la variable contrasena.</span>
+
+<span class=kr>if</span> <span class=p>(</span> <span class=n>usuario</span> <span class=o>==</span> <span class=s2>&#34;admin&#34;</span> <span class=p>)</span> <span class=ow>and</span> <span class=p>(</span><span class=n>contrasena</span> <span class=o>==</span> <span class=s2>&#34;123456&#34;</span><span class=p>)</span> <span class=kr>then</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;acceso permitido&#34;</span><span class=p>)</span>
+<span class=kr>elseif</span> <span class=p>(</span><span class=n>usuario</span> <span class=o>==</span> <span class=s2>&#34;admin&#34;</span><span class=p>)</span> <span class=ow>and</span> <span class=p>(</span><span class=n>contrasena</span> <span class=o>~=</span> <span class=s2>&#34;123456&#34;</span><span class=p>)</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;acceso denegado, su contraseña no es valida&#34;</span><span class=p>)</span>
+<span class=kr>elseif</span> <span class=p>(</span><span class=n>usuario</span> <span class=o>~=</span> <span class=s2>&#34;admin&#34;</span><span class=p>)</span> <span class=ow>and</span> <span class=p>(</span><span class=n>contrasena</span> <span class=o>==</span> <span class=s2>&#34;123456&#34;</span><span class=p>)</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;acceso denegado, su usuario no es valido&#34;</span><span class=p>)</span>
+<span class=kr>else</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;acceso denegado&#34;</span><span class=p>)</span>
+<span class=kr>end</span></code></pre></div><h3 id=bucles>Bucles</h3><h4 id=while>While</h4><p>La estructura while ejecuta un simple bucle, mientras se cumpla la condición. Su definición formal es la siguiente:</p><p>Ejemplo de codigo:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>while</span> <span class=p>(</span><span class=n>condición</span><span class=p>)</span> <span class=kr>do</span>
+    <span class=c1>-- cuerpo</span>
+<span class=kr>end</span></code></pre></div><p>digamos que tenemos una alarma y lo programamos para que comienze a las 0 horas, y cuando llegue a las 10 horas se detenga
+y suene, bueno con este ejercicio lo hacemos.</p><p>la variable estado representa el estado de la alarma en este caso esta encendida, y la variable hora representa la hora en la que
+inicia la alarma, en este caso a las 0 horas, bueno, el bucle se encargara de contar las horas hasta que finalice, en este caso
+a las 10 horas, dicho esto cuando el bucle llegue a la hora indicada se detendra la alarma y avisara con un mensaje.</p><p>Ejercicio:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>estado</span> <span class=o>=</span> <span class=kc>true</span>
+<span class=n>hora</span> <span class=o>=</span> <span class=mi>0</span>
+
+<span class=kr>while</span> <span class=p>(</span><span class=n>estado</span><span class=p>)</span> <span class=kr>do</span>
+	<span class=n>hora</span> <span class=o>=</span> <span class=p>(</span><span class=n>hora</span> <span class=o>+</span> <span class=mi>1</span><span class=p>)</span>
+	<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Son las &#34;</span> <span class=o>..</span> <span class=n>hora</span><span class=p>)</span>
+	<span class=kr>if</span> <span class=p>(</span><span class=n>hora</span> <span class=o>&gt;=</span> <span class=mi>10</span><span class=p>)</span> <span class=kr>then</span>
+		<span class=n>estado</span> <span class=o>=</span> <span class=kc>false</span>
+        <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Despierta&#34;</span><span class=p>)</span>
+	<span class=kr>end</span>
+<span class=kr>end</span></code></pre></div><h4 id=repeat>Repeat</h4><p>La estructura repeat es parecida a la anterior con la diferencia que si la condición es verdadera el ciclo se interrumpe,
+en otros lenguajes se parece al do while.</p><p>Ejemplo:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>repeat</span>
+    <span class=c1>--cuerpo</span>
+<span class=kr>until</span> <span class=n>condición</span></code></pre></div><p>bueno haremos el ejercicio anterior para que vean el parecido.</p><p>Ejercicio:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>hora</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=kr>repeat</span>
+    <span class=n>hora</span> <span class=o>=</span> <span class=n>hora</span> <span class=o>+</span> <span class=mi>1</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Son las &#34;</span> <span class=o>..</span> <span class=n>hora</span><span class=p>)</span>
+<span class=kr>until</span> <span class=n>hora</span> <span class=o>==</span> <span class=mi>10</span>
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Despierta&#34;</span><span class=p>)</span></code></pre></div><h4 id=for>For</h4><p>La estructura for al igual que while repite un bloque de código siempre y cuando sus condiciones se cumplan, en Lua se
+puede usar de dos formas.</p><h5 id=loop-for-numérico>Loop for numérico</h5><p>Ejecuta el bloque con la variable igual a inicio, luego sigue incrementándola cantidad de pasos y ejecutando el bloque
+nuevamente hasta que es mayor que el valor de parada. la variable de paso se puede omitir y se establecerá de manera
+predeterminada en 1 (Se entenderá mejor en el ejemplo).</p><p>Ejemplo:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>for</span> <span class=n>variable</span> <span class=o>=</span> <span class=n>inicio</span><span class=p>,</span> <span class=n>parada</span><span class=p>,</span> <span class=n>paso</span> <span class=kr>do</span>
+    <span class=c1>-- cuerpo</span>
+<span class=kr>end</span></code></pre></div><p>bueno haremos el ejercicio anterior para que vean el parecido.</p><p>Ejercicio:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>for</span> <span class=n>hora</span> <span class=o>=</span> <span class=mi>0</span> <span class=p>,</span> <span class=mi>10</span><span class=p>,</span> <span class=mi>1</span> <span class=kr>do</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Son las &#34;</span> <span class=o>..</span> <span class=n>hora</span><span class=p>)</span>
+    <span class=kr>if</span> <span class=p>(</span><span class=n>hora</span> <span class=o>==</span> <span class=mi>10</span><span class=p>)</span> <span class=kr>then</span> 
+        <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Despierta&#34;</span><span class=p>)</span>
+    <span class=kr>end</span>
+<span class=kr>end</span></code></pre></div><h5 id=loop-for-iterador>Loop for iterador</h5><p>La versión del iterador <code>for</code> toma una función de iterador especial y puede tener cualquier cantidad de variables.
+se entendera mejor mas adelante.</p><p>Ejemplo:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>for</span> <span class=n>variable1</span><span class=p>,</span> <span class=n>variable2</span><span class=p>,</span> <span class=n>variable3</span> <span class=kr>in</span> <span class=n>iterador</span> <span class=kr>do</span>
+    <span class=c1>-- cuerpo</span>
+<span class=kr>end</span></code></pre></div><p>En este ejercicio contaremos los habitantes de alguna ciudad, y la mostraremos en pantalla cual tiene mas y cual tiene menos,
+para ello crearemos una tabla bidimencional con el nombre de &ldquo;ciudades&rdquo;, en esa tabla añadiremos cuatro variables
+con el nombre de ciudad y su valor (el nombre, de la ciudad) y otras cuatro con el nombre de &ldquo;habitantes&rdquo; su valor es de tipo number(númerico)</p><p>en el bucle <code>for</code> la variable i seria el &ldquo;indíce&rdquo; y v el &ldquo;valor&rdquo;, esas variables estaran asociadas
+a la tabla ciudades donde i tomara el lugar de la &ldquo;posicion de la ciudad&rdquo; y v tomara el lugar de &ldquo;ciudad o habitantes&rdquo;,
+luego con una condicion verificamos cual variable tiene mas habitantes con la funcion <code>tonumber</code> le decimos al script que el valor
+de &ldquo;habitantes&rdquo; debe ser un numero, luego el bucle dara vueltas hasta encontrar la ciudad con mas habitantes.</p><p>Ejercicio:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=c1>-- Arreglo Bidimensional</span>
+
+<span class=n>ciudades</span> <span class=o>=</span> <span class=p>{</span>
+    <span class=p>{</span><span class=n>ciudad</span> <span class=o>=</span> <span class=s2>&#34;Upata&#34;</span><span class=p>,</span> <span class=n>habitantes</span> <span class=o>=</span> <span class=s2>&#34;1200&#34;</span><span class=p>},</span> <span class=c1>-- numero de indíce 1</span>
+    <span class=p>{</span><span class=n>ciudad</span> <span class=o>=</span> <span class=s2>&#34;Tumeremo&#34;</span><span class=p>,</span> <span class=n>habitantes</span> <span class=o>=</span> <span class=s2>&#34;4000&#34;</span><span class=p>},</span> <span class=c1>-- numero de indíce 2</span>
+    <span class=p>{</span><span class=n>ciudad</span> <span class=o>=</span> <span class=s2>&#34;San felix&#34;</span><span class=p>,</span> <span class=n>habitantes</span> <span class=o>=</span> <span class=s2>&#34;1500&#34;</span><span class=p>},</span> <span class=c1>-- numero de indíce 3</span>
+    <span class=p>{</span><span class=n>ciudad</span> <span class=o>=</span> <span class=s2>&#34;Puerto ordaz&#34;</span><span class=p>,</span> <span class=n>habitantes</span> <span class=o>=</span> <span class=s2>&#34;1400&#34;</span><span class=p>}</span>  <span class=c1>-- numero de indíce 4</span>
+<span class=p>}</span>
+
+<span class=c1>-- i = indice de la ciudad</span>
+<span class=c1>-- v = valor de la ciudad</span>
+
+<span class=kr>for</span> <span class=n>i</span><span class=p>,</span> <span class=n>v</span> <span class=kr>in</span> <span class=n>ipairs</span><span class=p>(</span><span class=n>ciudades</span><span class=p>)</span> <span class=kr>do</span>
+    <span class=kr>if</span> <span class=p>(</span><span class=n>tonumber</span><span class=p>(</span><span class=n>v.habitantes</span><span class=p>)</span> <span class=o>&gt;</span> <span class=mi>1000</span> <span class=ow>and</span> <span class=n>tonumber</span><span class=p>(</span><span class=n>v.habitantes</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>1500</span><span class=p>)</span> <span class=kr>then</span>
+        <span class=n>print</span><span class=p>(</span><span class=n>i</span><span class=p>,</span> <span class=n>v.ciudad</span><span class=p>,</span><span class=s2>&#34; tiene &#34;</span><span class=o>..</span> <span class=n>v.habitantes</span> <span class=o>..</span> <span class=s2>&#34; habitantes&#34;</span><span class=p>)</span>
+    <span class=kr>end</span>
+<span class=kr>end</span></code></pre></div><h3 id=funciónes>Funciónes</h3><p>Básicamente para cualquier lenguaje de programación, una estructura de control permite modificar el flujo de ejecución de instrucciones de un programa.</p><p>Lua cuenta con 4 estructuras de control, la estructura if, while, repeat y for.</p><p>Para crear una función en Lua, se utiliza la palabra reservada function , la estructura básica es la siguiente:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>function</span> <span class=nf>nombreFuncion</span> <span class=p>()</span>
+    <span class=c1>-- cuerpo</span>
+<span class=kr>end</span></code></pre></div><p>Pero también podemos declarar funciones como si se trataran de variables utilizando la siguiente estructura:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=n>nombreFuncion</span> <span class=o>=</span> <span class=kr>function</span> <span class=p>()</span>
+    <span class=c1>-- cuerpo</span>
+<span class=kr>end</span></code></pre></div><h4 id=funciones-con-argumentos>Funciones con argumentos</h4><p>Las funciones también pueden recibir argumentos, esto quiere decir que son parámetros o valores de
+entrada que son enviados hacia la función.</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>function</span> <span class=nf>nombreFuncion</span> <span class=p>(</span><span class=n>argumento1</span><span class=p>,</span> <span class=n>argumento2</span><span class=p>)</span>
+    <span class=c1>-- cuerpo</span>
+<span class=kr>end</span></code></pre></div><p>Ejercicio basico:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>function</span> <span class=nf>saludar</span> <span class=p>(</span> <span class=n>nombre</span> <span class=p>)</span>
+    <span class=n>print</span><span class=p>(</span><span class=s2>&#34;Hola &#34;</span> <span class=o>..</span> <span class=n>nombre</span><span class=p>)</span>
+<span class=kr>end</span>
+
+<span class=n>saludar</span><span class=p>(</span><span class=s2>&#34;Victor&#34;</span><span class=p>)</span></code></pre></div><p>Si ejecutamos nos devuelve el valor de:</p><p><code>Hola Victor</code></p><p>Como ejercicio complejo, haremos la famosa calculadora, estaremos usando la funcion <code>type</code> que retorna un string que
+describe el tipo de un valor dado, <code>io.read</code> escribiremos en patalla, <code>print</code> con la cual imprimimos en pantalla y condicionales.</p><p>nuestra funcion se llamara &ldquo;calculadora&rdquo; y recibira tres parametros, los cuales seran a que vendria siendo el primer valor,
+op que seria el operador (+,-,*,/) y b que seria el segundo valor para hacer la operacion.</p><p>luego comprobaremos con la funcion <code>type</code> si el op (operador) es un string y el op es &ldquo;+&rdquo; sumamos a con a , si es &ldquo;-&rdquo; restamos
+a con b y asi con los demas,
+si ninguna condicion se cumple, imprimimos en pantalla &ldquo;el operador no es valido&rdquo;.</p><p>Ejercicio:</p><div class=highlight><pre class=chroma><code class=language-lua data-lang=lua><span class=kr>function</span> <span class=nf>calculadora</span><span class=p>(</span><span class=n>a</span><span class=p>,</span> <span class=n>op</span><span class=p>,</span> <span class=n>b</span><span class=p>)</span>
+    <span class=kr>if</span> <span class=p>(</span><span class=n>type</span><span class=p>(</span><span class=n>op</span><span class=p>)</span> <span class=o>==</span> <span class=s1>&#39;string&#39;</span><span class=p>)</span> <span class=kr>then</span>
+        <span class=kr>if</span> <span class=p>(</span><span class=n>op</span> <span class=o>==</span> <span class=s1>&#39;+&#39;</span><span class=p>)</span> <span class=kr>then</span>
+            <span class=n>print</span><span class=p>(</span><span class=n>a</span> <span class=o>+</span> <span class=n>b</span><span class=p>)</span>
+        <span class=kr>elseif</span> <span class=p>(</span><span class=n>op</span> <span class=o>==</span> <span class=s1>&#39;-&#39;</span><span class=p>)</span> <span class=kr>then</span>
+            <span class=n>print</span><span class=p>(</span><span class=n>a</span> <span class=o>-</span> <span class=n>b</span><span class=p>)</span>
+        <span class=kr>elseif</span> <span class=p>(</span><span class=n>op</span> <span class=o>==</span> <span class=s1>&#39;/&#39;</span><span class=p>)</span> <span class=kr>then</span>
+            <span class=n>print</span><span class=p>(</span><span class=n>a</span> <span class=o>/</span> <span class=n>b</span><span class=p>)</span>
+        <span class=kr>elseif</span> <span class=p>(</span><span class=n>op</span> <span class=o>==</span> <span class=s1>&#39;*&#39;</span><span class=p>)</span> <span class=kr>then</span>
+            <span class=n>print</span><span class=p>(</span><span class=n>a</span> <span class=o>*</span> <span class=n>b</span><span class=p>)</span>
+        <span class=kr>else</span>
+            <span class=n>print</span><span class=p>(</span><span class=s2>&#34;el operador no es valido&#34;</span><span class=p>)</span>
+        <span class=kr>end</span>
+    <span class=kr>end</span>
+<span class=kr>end</span>
+
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Introduzca primer valor&#34;</span><span class=p>)</span>
+<span class=n>a</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span>
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Introduzca operador&#34;</span><span class=p>)</span>
+<span class=n>op</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span>
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;Introduzca tercer valor&#34;</span><span class=p>)</span>
+<span class=n>b</span> <span class=o>=</span> <span class=n>io.read</span><span class=p>()</span>
+
+<span class=n>print</span><span class=p>(</span><span class=s2>&#34;El resultado es &#34;</span><span class=p>)</span>
+
+<span class=n>calculadora</span><span class=p>(</span><span class=n>a</span><span class=p>,</span> <span class=n>op</span><span class=p>,</span> <span class=n>b</span><span class=p>)</span></code></pre></div><h2 id=nota>NOTA</h2><p>tal vez no me explique muy bien que se diga, pero estare puliendo la guía.</p></div></article><nav class=bd-prev-next-bis><a class=bd-prev-next-bis-previous href=https://diazvictor.github.io/post/guia-mqtt-desde-la-terminal/ title="Guia Mqtt Desde La Terminal">← Guia Mqtt Desde La Terminal</a></nav></section><div class="section comments"><div id=disqus_thread></div><script>(function(){var d=document,s=d.createElement('script');s.src='https://diazvictor.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div><div class="column is-4"><div class="section sidebar"><h1 class="title is-4">ABOUT ME</h1><p>Desarrollador web y desktop con conocimientos (backend/frontend) en lenguajes Lua, Php, SQL (SQLite), HTML, CSS y Javascript.</p><hr><h1 class="title is-4">LATEST POSTS</h1><ul><li><a href=/post/estilos-para-gtk3-con-lua-css/><b>Agregando estilos css con LGI (lua + gtk)</b></a></li><li><time>21 January, 2021</time></li><div class=has-margin-10 style=margin-bottom:10px></div><li><a href=/post/primeros-pasos-con-lua-gtk/><b>Primeros pasos con LGI (lua y gtk)</b></a></li><li><time>21 January, 2021</time></li><div class=has-margin-10 style=margin-bottom:10px></div><li><a href=/post/guia-mqtt-desde-la-terminal/><b>Guia Mqtt Desde La Terminal</b></a></li><li><time>2 May, 2020</time></li><div class=has-margin-10 style=margin-bottom:10px></div><li><a href=/post/manual-basico-lua/><b>Manual Basico Sobre Lua</b></a></li><li><time>24 April, 2020</time></li><div class=has-margin-10 style=margin-bottom:10px></div></ul><hr><h1 class="title is-4">CATEGORIES</h1><div class="field is-grouped is-grouped-multiline"><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/categories/desarrollo/ class="tag is-light" style=text-transform:uppercase>desarrollo</a></div></div></div><hr><h1 class="title is-4">TAGS</h1><div class="field is-grouped is-grouped-multiline"><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/css/ class="tag is-light">css</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/gtk/ class="tag is-light">gtk</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/lgi/ class="tag is-light">lgi</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/lua/ class="tag is-light">lua</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/manual/ class="tag is-light">manual</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/mosquitto/ class="tag is-light">mosquitto</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/mqtt/ class="tag is-light">mqtt</a></div></div><div class=control><div class="tags has-addons"><a href=https://diazvictor.github.io/tags/tutorial/ class="tag is-light">tutorial</a></div></div></div></div></div></div></div><footer class="footer has-background-info"><div class="content has-text-white"><div class=columns><div class="column is-11"><div class=buttons><a href=https://github.com/diazvictor/ class="button is-link is-medium"><span class=icon><i class="fab fa-github-alt"></i></span></a><a href=https://gitlab.com/diazvictor/ class="button is-link is-medium"><span class=icon><i class="fab fa-gitlab"></i></span></a><a href=https://t.me/diazvictor class="button is-link is-medium"><span class=icon><i class="fab fa-telegram"></i></span></a><a href=mailto:victor.vector008@gmail.com class="button is-link is-medium"><span class=icon><i class="fas fa-envelope"></i></span></a></div></div><div class="column is-1 is-hidden-mobile"><div class="buttons is-right"><a href=#! class="button is-link is-medium btn_top"><span class=icon><i class="fas fa-chevron-up"></i></span></a></div></div></div><hr><p>© 2021 diazvictor · Powered by <a href=https://gohugo.io/ class=has-text-white><u>Hugo</u></a> & <a href=http://bulma.io/ class=has-text-white><u>Bulma</u></a>.</p><div class="buttons is-centered is-hidden-tablet"><a href=#! class="button is-link is-medium btn_top"><span class=icon><i class="fas fa-chevron-up"></i></span></a></div></div></footer><script type=text/javascript src=/js/nav-burger.js></script><script type=text/javascript src=/js/back_to_top.js></script><script type=text/javascript src=/js/toggle-theme.js></script><script type=text/javascript>window.addEventListener('load',function(){var url=window.location.href;sessionStorage.setItem('lastPage',url);});</script></body></html>
