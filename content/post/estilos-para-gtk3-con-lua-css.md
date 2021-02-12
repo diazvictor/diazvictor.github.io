@@ -1,6 +1,6 @@
 ---
 title: "Agregando estilos css con LGI (lua + gtk)"
-date: 2021-01-21T23:57:10-04:00
+date: 2021-02-09T05:57:10-04:00
 author: "Víctor Díaz"
 description: "En este tutorial agregaremos estilos css para usarlos con los widgets de gtk+"
 keywords: ["lua", "gtk", "lgi", "css"]
