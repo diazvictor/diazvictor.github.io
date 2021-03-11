@@ -55,20 +55,29 @@ social_footer = true
     url = "https://github.com/diazvictor/"
 
 [[params.social]]
-	name = "GITLAB"
-	icon = "fab fa-gitlab"
-	color = "is-link"
-    weight = 1
-    url = "https://gitlab.com/diazvictor/"
-
-[[params.social]]
+	name = "TELEGRAM"
 	icon = "fab fa-telegram"
 	color = "is-link"
     weight = 1
     url = "https://t.me/diazvictor"
 
 [[params.social]]
+	name = "MASTODON"
+	icon = "fab fa-mastodon"
+	color = "is-link"
+    weight = 1
+    url = "https://mas.to/@diazvictor"
+
+[[params.social]]
+	name = "MAIL"
 	icon = "fas fa-envelope"
 	color = "is-link"
     weight = 1
     url = "mailto:victor.vector008@gmail.com"
+
+[[params.social]]
+	name = "GITLAB"
+	icon = "fab fa-gitlab"
+	color = "is-link"
+    weight = 1
+    url = "https://gitlab.com/diazvictor/"
