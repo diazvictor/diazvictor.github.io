@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://diazvictor.github.io/"
 languageCode = "es"
 publishDir = "public"
 title = "Víctor Díaz - Desarrollador Web y Amante de Lua"
