@@ -1,8 +1,9 @@
 ---
-title: "Primeros pasos con LGI (lua + gtk)"
+title: "Primeros pasos con LGI"
 date: 2021-01-21T23:57:10-04:00
 author: "Víctor Díaz"
-description: "En este tutorial te enseñare a constuir una interfaz con lua y gtk usando la libreria LGI"
+description: "En este tutorial te enseñare a construir una interfaz con
+lua y gtk usando la librería LGI"
 keywords: ["lua", "gtk", "lgi"]
 readTime: true
 tags: ["lua", "gtk", "lgi", "tutorial"]
@@ -17,9 +18,9 @@ Luego, extenderemos el script para agregarle un botón que realiza una determina
 Antes de comenzar, recomiendo los siguientes documentos para que podamos aprender
 un poco más sobre LGI:
 
-- https://github.com/pavouk/lgi/blob/master/docs/overview.md
-- https://github.com/pavouk/lgi/blob/master/docs/guide.md
-- https://github.com/pavouk/lgi/blob/master/docs/gtk.md
+* https://github.com/pavouk/lgi/blob/master/docs/overview.md
+* https://github.com/pavouk/lgi/blob/master/docs/guide.md
+* https://github.com/pavouk/lgi/blob/master/docs/gtk.md
 
 Puedes instalar lgi usando LuaRocks:
 
@@ -32,19 +33,19 @@ O con el gestor de paquetes de tu distro (si está disponible).
 ## Ejemplo Simple
 
 Para comenzar con nuestro tutorial crearemos el ejemplo más simple posible.
-Este programa creará una ventana vacía de 200 x 200 píxeles.
+Este programa creará una ventana vacía de `200x200` píxeles.
 
 ![simple-window.lua](/images/post/primeros-pasos-con-lua-gtk/screen1.jpg)
 
 Primero crearemos un archivo de nombre `sample-window.lua`
-con el siguiente codigo:
+con el siguiente código:
 
 ```lua
-local lgi = require('lgi')
-local Gtk = lgi.require('Gtk', '3.0')
+local lgi = require("lgi")
+local Gtk = lgi.require("Gtk", "3.0")
 
 local window = Gtk.Window {
-	title = 'Sample - Window',
+	title = "Sample - Window",
 	width = 200,
 	height = 200,
 	window_position = Gtk.WindowPosition.CENTER,
@@ -57,29 +58,29 @@ window:show_all()
 Gtk.main()
 ```
 
-A continuación explicaremos cada línea del ejemplo.
+A continuación explicaremos con detalle cada línea del ejemplo.
 
 ```lua
 local lgi = require('lgi')
 local Gtk = lgi.require('Gtk', '3.0')
 ```
 
-Para disponer de las clases y funciones de GTK+, es necesario primero cargar la
-librería LGI y luego el módulo Gtk. Como el sistema de un usuario puede tener varias
-versiones de GTK+ instaladas al mismo tiempo, queremos asegurarnos de que cuando
-cargamos Gtk se refiere a GTK+ 3 y no a cualquier otra versión de la librería,
-que es el propósito de la sentencia `lgi.require('Gtk', '3.0')`.
+Para disponer de las clases y funciones de **GTK+**, es necesario primero cargar la
+librería **LGI** y luego el módulo **Gtk**. Como el sistema de un usuario puede tener varias
+versiones de **GTK+** instaladas al mismo tiempo, queremos asegurarnos de que cuando
+cargamos **Gtk** se refiere a **GTK 3** y no a cualquier otra versión de la librería,
+que es el propósito de la sentencia `lgi.require("Gtk", "3.0")`.
 
-La siguiente línea crea una ventana vacía con un titulo, un tamaño de 200 x 200,
+La siguiente línea crea una ventana vacía con un título, un tamaño de `200x200`,
 centramos la ventana en el centro de la pantalla y conectamos la ventana al evento
 `destroy` (que sucede cuando destruimos la ventana o la cerramos) para asegurarnos
-de que la aplicación se termina si hacemos clic en la x de la ventana.
+de que la aplicación se termina si hacemos clic en la `X` de la ventana.
 
-Cabe aclarar que con LGI las señales se conectan con _on_<nombre de la señal>_
+Cabe aclarar que con **LGI** las señales se conectan con _on_<nombre de la señal>_
 
 ```lua
 window = Gtk.Window {
-	title = 'Sample - Window', -- titulo
+	title = "Sample - Window", -- título
 	width = 200, -- ancho
 	height = 200, -- alto
 	window_position = Gtk.WindowPosition.CENTER, -- posición
@@ -95,7 +96,7 @@ En el siguiente paso mostramos la ventana.
 window:show_all()
 ```
 
-Por último, iniciamos el bucle de procesamiento de GTK+, del cual saldremos
+Por último, iniciamos el bucle de procesamiento de **GTK+**, del cual saldremos
 cuando la ventana sea cerrada (ver línea 15).
 
 ```lua
@@ -111,7 +112,7 @@ lua sample-window.lua
 
 ## Ejemplo Extendido
 
-Para algo un poco más útil, aquí está la vesión en LGI del clásico
+Para algo un poco más útil, aquí está la versión en **LGI** del clásico
 programa _Hello World_.
 
 ![hello-world.lua](/images/post/primeros-pasos-con-lua-gtk/screen2.jpg)
@@ -124,7 +125,7 @@ local MyWindow = Gtk.Window:derive("MyWindow")
 function MyWindow:_init()
 	self.title = "Hello World"
 
-	local button = Gtk.Button({ label = "Click Here" })
+	local button = Gtk.Button({ label = "Click Aquí" })
 	function button:on_clicked()
 		print("Hello World")
 	end
@@ -152,8 +153,9 @@ propiedad `title`.
 self.title = "Hello World"
 ```
 
-Las próximas tres líneas son usadas para crear un botón (_[widget](http://es.wikipedia.org/wiki/Widget)_),
-conectarlo a su señal `clicked`, y adicionarlo como hijo a la ventana.
+Las próximas cinco líneas son usadas para crear un botón
+(_[widget](http://es.wikipedia.org/wiki/Widget)_), conectarlo a su señal
+`clicked`, y adicionarlo como hijo a la ventana.
 
 ```lua
 local button = Gtk.Button({ label = "Click Here" })

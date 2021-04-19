@@ -1,15 +1,15 @@
 ---
-title: "Guia Mqtt Desde La Terminal"
+title: "Cómo usar mosquitto desde la terminal"
 date: 2020-05-02T00:36:27-04:00
 author: "Víctor Díaz"
-description: "Guia basica para conectarse a un servidor Mosquitto/MQTT mediante la linea de comandos."
+description: "Guia basica para conectarse a un servidor Mosquitto mediante la linea de comandos."
 keywords: ["mqtt", "mosquitto", "guia", "tutoriales"]
 readTime: true
 tags: ["mqtt", "mosquitto", "tutorial"]
 categories: ["Desarrollo"]
 ---
 
-## Guia basica para conectarse a un servidor Mosquitto/MQTT mediante la linea de comandos.
+## Guia basica para conectarse a un servidor mosquitto mediante la linea de comandos.
 
 ### Indíce
 1. [Como subcribirse a una sala](#1-como-subcribirse-a-una-sala)

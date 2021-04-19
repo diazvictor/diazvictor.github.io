@@ -1,7 +1,6 @@
 ---
 title: "Manual Basico Sobre Lua"
 date: 2020-04-24T13:46:37-04:00
-author: "Víctor Díaz"
 description: "En este manual aprenderemos lo basico de lua."
 keywords: ["lua", "manual", "basico", "geany", "textadept", "zerobrane"]
 readTime: true
@@ -12,15 +11,15 @@ categories: ["Desarrollo"]
 # Manual basico de lua
 
 En este manual aprenderemos lo basico de lua.
-Vease tambien el [manual](https://www.lua.org/manual/5.1/es/manual.html) oficial de lua para mas informacion.
+Vease tambien el [manual](https://www.lua.org/manual/5.1/es/manual.html) oficial de lua para más informacion.
 
 ## Acerca de
 
-En la actualidad hay muchos lenguajes de programación, siendo posiblemente Java y C++ los más conocidos. Sin embargo, dichos 
+En la actualidad hay muchos lenguajes de programación, siendo posiblemente Java y C++ los más conocidos. Sin embargo, dichos
 lenguajes de programación pueden ser demasiado difíciles para empezar, debido a la gran cantidad de elementos a tener en cuenta 
 para que un programa pueda ejecutarse, haciéndolos posiblemente puntos de partida un tanto difíciles.
 
-Lua, en cambio, es un lenguaje mucho más sencillo de aprender y que puede ser un mejor punto de partida, debido a que necesita 
+Lua, en cambio, es un lenguaje mucho más sencillo de aprender y que puede ser un mejor punto de partida, debido a que necesita
 menos líneas de código para poder funcionar. Para ello vamos a mostrar el código de una frase en tres lenguajes diferentes.
 
 "Hola Mundo" en C++:
@@ -53,7 +52,7 @@ print("Hola Mundo")
 ## Versiones
 
 Como cualquier lenguaje de programación interpretado, Lua evoluciona constantemente, estos cambios se distribuyen en versiones,
-actualmente las versiones mas populares son la 5.0, 5.1, 5.2 y 5.3, personalmente prefiero la versión 5.1 que es una de las mas 
+actualmente las versiones más populares son la 5.1, 5.2 y 5.3, personalmente prefiero la versión 5.1 que es una de las más 
 extendidas.
 
 ## Instalación
@@ -95,8 +94,8 @@ para ejecutar dicho archivo seria de esta manera:
 Para empezar a estudiar lua, recomiendo usar uno de los siguientes editores :
 
 * [Textadept](https://foicica.com/textadept/) esta escrito en lua, por lo que esta orientado a la programacion de dicho lenguaje, lo uso para hacer script rapidos
-* [Geany IDE](geany.org) es un buen IDE rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a lua, hice unas configuraciones para lua y la verdad quedo de maravilla, lo uso mas que todo para projectos grandes.
-* [ZeroBrane](http://example.net/),creo es el mejor de todos ya que es un IDE que tiene todo lo que nesecitas para programar en lua
+* [Geany IDE](geany.org) es un buen IDE, rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a lua, hice unas configuraciones para lua y la verdad quedo de maravilla, lo uso más que todo para projectos grandes.
+* [ZeroBrane](http://example.net/),creo es el mejor de todos ya que es un IDE que tiene todo lo que necesitas para programar en lua
 
 ## ¿Que podemos hacer con lua?
 
@@ -139,7 +138,7 @@ en `lua` hay variables locales, globales y tablas.
 variable = "global" -- lua reconoce todas las variables como globales a no ser, que la variable este declarada como local de esta manera
 local variable = "local o privada"
 -- arreglo o tabla simple
-numeros = {"uno","dos","tres"} -- valores
+números = {"uno","dos","tres"} -- valores
 -- arreglo asosiativo
 informacion = {
     username = "diazvictor",
@@ -154,8 +153,8 @@ print(informacion.username)
 ```
 
 busco en la tabla informacion la variable llamada username y imprimo su valor. igual con la tabla arreglo.
-la tabla numeros, contiene tres valores, "uno", "dos" y "tres", para acceder a uno de sus valores,
-`numeros[1]`, numeros es la tabla y entre "corchetes" la posicion del valor.
+la tabla números, contiene tres valores, "uno", "dos" y "tres", para acceder a uno de sus valores,
+`números[1]`, números es la tabla y entre "corchetes" la posicion del valor.
 
 ### Tipos de datos
 
@@ -213,33 +212,33 @@ si colocamos la variable nombre, la salida sera la siguiente:
 string
 ```
 
-y asi puedes probar con las de mas variables.
+y asi puedes probar con las demás variables.
 
 ## Operadores.
 
 ### Operadores aritméticos.
 
-Son aquellos que permiten realizar operaciones matemáticas básicas, Lua tiene, los operadores aritméticos comunes:
+Son aquellos que permiten realizar operaciones matemáticas básicas, Lua tiene los operadores aritméticos comunes:
 
-| Operador | Propósito |
-| -------- | --------- |
-| + | adición |
-| - | substracción |
-| * | multiplicación |
-| / | división |
-| // | división  de piso |
-| % | modulo |
-| - | Negación (Unario) |
+| Operador | Propósito         |
+| -------- | ----------------- |
+| +        | adición           |
+| -        | substracción      |
+| *        | multiplicación    |
+| /        | división          |
+| //       | división de piso  |
+| %        | modulo            |
+| -        | Negación (Unario) |
 
 ### Operadores logicos.
 
- Los operadores lógicos en Lua son and, or y not. Como las estructuras de control todos los operadores lógicos consideran false
-y nil como falso y todo lo demás como verdadero.
+Los operadores lógicos en Lua son `and`, `or` y `not`. Como las estructuras de control, todos los operadores lógicos consideran `false`
+y `nil` como falso y todo lo demás como verdadero.
 
-El operador negación not siempre retorna false o true. El operador conjunción and retorna su primer operando si su valor
-es false o nil; en caso contrario and retorna su segundo operando. El operador disyunción or retorna su primer 
-operando si su valor es diferente de nil y false; en caso contrario or retorna su segundo argumento. 
-Tanto and como or usan evaluación de cortocircuito; esto es, su segundo operando se evalúa sólo si es necesario.
+El operador negación `not` siempre retorna `false` o `true`. El operador conjunción `and` retorna su primer operando si su valor
+es `false` o `nil`; en caso contrario `and` retorna su segundo operando. El operador disyunción `or` retorna su primer 
+operando si su valor es diferente de `nil` y `false`; en caso contrario `or` retorna su segundo argumento. 
+Tanto `and` como `or` usan evaluación de cortocircuito; esto es, su segundo operando se evalúa sólo si es necesario.
 
 | Operadores |
 | ---------- |
@@ -252,23 +251,23 @@ vease tambien [tabla de la verdad de operadores logicos](https://es.wikipedia.or
 ### Operadores relacionales.
 
 Los operadores relacionales son usados para comparar dos valores, si la exprecion evaluada es correcta dará 
-un resultado true (verdadero) de lo contrario sera false (falsa). 
+un resultado `true` (verdadero) de lo contrario sera `false` (falso). 
 Los operadores relacionales en Lua son:
 
-| Operadores |       Uso     |     Nombre     | Descripción |
-| ---------- | ------------- | -------------- | ----------- |
-| ==         |     1 == "texto"    | Igualdad       | 1 es igual a "texto", no por que 1 es un valor de tipo number y "texto" es un valor de tipo "string", por lo tanto retorna un valor booleano en este caso false. |
-| >          |         3 > 2       | Mayor que      | 3 es mayor que 2, si por lo tanto retorna true. |
-| <          |         5 < 9       | Menor que      | 5 es menor que 9, por lo tanto retorna true. |
-| >=         |        7 >= 7       | Mayor  o igual | 7 es mayor que 7, no pero si es igual, por lo tanto retorna true. |
-| <=         |        9 <= 6       | Menor  o igual | 9 es menor que 6 o igual, no por lo tanto retorna false. |
-| ~=         |    1 ~= "texto"     | Diferente      | 1 es diferente a "texto" que es un valor de tipo "string", si por lo tanto retorna true. | 
+| Operadores | Uso           | Nombre         | Descripción                                                                                                                                                         |
+| ---------- | ------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ==         | 1 == "texto"  | Igualdad       | 1 es igual a "texto", no por que 1 es un valor de tipo number y "texto" es un valor de tipo "string", por lo tanto retorna un valor booleano, en este caso `false`. |
+| >          | 3 > 2         | Mayor que      | 3 es mayor que 2, por lo tanto retorna `true`.                                                                                                                      |
+| <          | 5 < 9         | Menor que      | 5 es menor que 9, por lo tanto retorna `true`.                                                                                                                      |
+| >=         | 7 >= 7        | Mayor o igual  | 7 es mayor que 7, no pero si es igual, por lo tanto retorna `true`.                                                                                                 |
+| <=         | 9 <= 6        | Menor o igual  | 9 es menor que 6 o igual, no por lo tanto retorna `false`.                                                                                                          |
+| ~=         | 1 ~= "texto"  | Diferente      | 1 es diferente a "texto" que es un valor de tipo `string`, si por lo tanto retorna `true`.                                                                          |
 
 ## Estructuras de control
 
-Las estructuras de control if, while y repeat tienen el significado habitual.
+Las estructuras de control `if`, `while` y `repeat` tienen el significado habitual.
 
-Lua tiene también una sentencia for, en dos formatos.
+Lua tiene también una sentencia `for`, en dos formatos.
 
 ### Condicionales
 
@@ -282,8 +281,8 @@ if ( condicion ) then
 end
 {{< /highlight >}}
 
-Si la condición se cumple (es decir, si su valor es true) se ejecutan todas las instrucciones que se encuentran 
-dentro del bloque {...}. Si la condición no se cumple (es decir, si su valor es false) no se ejecuta ninguna instrucción
+Si la condición se cumple (es decir, si su valor es `true`) se ejecutan todas las instrucciones que se encuentran 
+dentro del bloque {...}. Si la condición no se cumple (es decir, si su valor es `false`) no se ejecuta ninguna instrucción
 contenida en {...} y el programa continúa ejecutando el resto de instrucciones del script.
 
 Ejercicio:
@@ -306,13 +305,13 @@ else
 end
 {{< /highlight >}}
 
-El if comprueba si se cumple la condición (que puede estar entre paréntesis) e imprime en la pantalla (a través de una consola) 
-lo que hay debajo del if (el cuerpo), en caso contrario imprime lo que hay debajo de else (el cuerpo), 
+El `if` comprueba si se cumple la condición (que puede estar entre paréntesis) e imprime en la pantalla (a través de una consola)
+lo que hay debajo del `if` (el cuerpo), en caso contrario imprime lo que hay debajo de `else` (el cuerpo),
 que viene a decir "si no". Como ves, los valores se asignan a las variables a través de un solo igual (=), mientras que 
-para comprobar en las condicionantes hay que usar forzosamente doble igual (==). Además del doble igual, también se puede 
+para comprobar en las condicionantes hay que usar forzosamente doble igual (==). Además del doble igual, también se puede
 comparar utilizando mayor (>), menor (<), mayor o igual (>=), menor o igual (<=) y distinto (~=).
 
-Se pueden establecer varias condiciones a la vez, pudiendo utilizar and, or y not.
+Se pueden establecer varias condiciones a la vez, pudiendo utilizar `and`, `or` y `not`.
 
 Elaboraremos un script que me simule una clave de acceso. Si el usuario es: "admin" y la clave "123456" mostrara el mensaje "acceso permitido" caso contrario mostrara el mensaje "acceso denegado".
 
@@ -335,7 +334,7 @@ end
 {{< /highlight >}}
 
 ahora podemos hacer que cuando ingresen el usuario de "admin" pero la "contrasena" que imprima en pantalla "acceso denegado, su contraseña no es valida"
-y al reves con "contrasena" y "admin" con otra condicion llamada elseif que ya la veremos:
+y al reves con "contrasena" y "admin" con otra condicion llamada `elseif` que ya la veremos:
 
 {{< highlight lua >}}
 print("Usuario:")
@@ -358,7 +357,7 @@ end
 
 #### While
 
-La estructura while ejecuta un simple bucle, mientras se cumpla la condición. Su definición formal es la siguiente:
+La estructura `while` ejecuta un simple bucle, mientras se cumpla la condición. Su definición formal es la siguiente:
 
 Ejemplo de codigo:
 
@@ -371,8 +370,8 @@ end
 digamos que tenemos una alarma y lo programamos para que comienze a las 0 horas, y cuando llegue a las 10 horas se detenga
 y suene, bueno con este ejercicio lo hacemos.
 
-la variable estado representa el estado de la alarma en este caso esta encendida, y la variable hora representa la hora en la que
-inicia la alarma, en este caso a las 0 horas, bueno, el bucle se encargara de contar las horas hasta que finalice, en este caso
+la variable **estado** representa el estado de la alarma, en este caso esta encendida, y la variable **hora** representa la hora en la que
+inicia la alarma, en este caso a las 0 horas, el bucle se encargara de contar las horas hasta que finalice, en este caso
 a las 10 horas, dicho esto cuando el bucle llegue a la hora indicada se detendra la alarma y avisara con un mensaje.
 
 Ejercicio:
@@ -392,7 +391,7 @@ end
 {{< /highlight >}}
 
 #### Repeat
-La estructura repeat es parecida a la anterior con la diferencia que si la condición es verdadera el ciclo se interrumpe, 
+La estructura repeat es parecida a la anterior con la diferencia que si la condición es verdadera el ciclo se interrumpe,
 en otros lenguajes se parece al do while.
 
 Ejemplo:
@@ -403,7 +402,7 @@ repeat
 until condición
 {{< /highlight >}}
 
-bueno haremos el ejercicio anterior para que vean el parecido.
+Haremos el ejercicio anterior para observar su comportamiento.
 
 Ejercicio:
 
@@ -412,13 +411,13 @@ hora = 0
 repeat
     hora = hora + 1
     print("Son las " .. hora)
-until hora == 10
+until (hora == 10)
 print("Despierta")
 {{< /highlight >}}
 
 #### For
 
-La estructura for al igual que while repite un bloque de código siempre y cuando  sus condiciones se cumplan, en Lua se 
+La estructura `for` al igual que `while` repite un bloque de código siempre y cuando sus condiciones se cumplan, en Lua se
 puede usar de dos formas.
 
 ##### Loop for numérico
@@ -435,7 +434,7 @@ for variable = inicio, parada, paso do
 end
 {{< /highlight >}}
 
-bueno haremos el ejercicio anterior para que vean el parecido.
+Haremos el ejercicio anterior para observar su comportamiento.
 
 Ejercicio:
 
@@ -450,8 +449,8 @@ end
 
 ##### Loop for iterador
 
-La versión del iterador `for` toma una función de iterador especial y puede tener cualquier cantidad de variables. 
-se entendera mejor mas adelante.
+La versión del iterador `for` toma una función de iterador especial y puede tener cualquier cantidad de variables.
+se entendera mejor más adelante.
 
 Ejemplo:
 
@@ -461,14 +460,14 @@ for variable1, variable2, variable3 in iterador do
 end
 {{< /highlight >}}
 
-En este ejercicio contaremos los habitantes de alguna ciudad, y la mostraremos en pantalla cual tiene mas y cual tiene menos, 
+En este ejercicio contaremos los habitantes de alguna ciudad, y la mostraremos en pantalla cual tiene más y cual tiene menos, 
 para ello crearemos una tabla bidimencional con el nombre de "ciudades", en esa tabla añadiremos cuatro variables
 con el nombre de ciudad y su valor (el nombre, de la ciudad) y otras cuatro con el nombre de "habitantes" su valor es de tipo number(númerico)
 
-en el bucle `for` la variable i seria el "indíce" y v el "valor", esas variables estaran asociadas
-a la tabla ciudades donde i tomara el lugar de la "posicion de la ciudad" y v tomara el lugar de "ciudad o habitantes",
-luego con una condicion verificamos cual variable tiene mas habitantes con la funcion `tonumber` le decimos al script que el valor
-de "habitantes" debe ser un numero, luego el bucle dara vueltas hasta encontrar la ciudad con mas habitantes.
+en el bucle `for` la variable `i` seria el "indíce" y `v` el "valor", esas variables estaran asociadas
+a la tabla ciudades donde `i` tomara el lugar de la "posicion de la ciudad" y `v` tomara el lugar de "ciudad o habitantes",
+luego con una condicion verificamos cual variable tiene más habitantes, con la funcion `tonumber` le decimos al script que el valor
+de "habitantes" se convierta en un número, luego el bucle dara vueltas hasta encontrar la ciudad con más habitantes.
 
 Ejercicio:
 
@@ -476,10 +475,10 @@ Ejercicio:
 -- Arreglo Bidimensional
 
 ciudades = {
-    {ciudad = "Upata", habitantes = "1200"}, -- numero de indíce 1
-    {ciudad = "Tumeremo", habitantes = "4000"}, -- numero de indíce 2
-    {ciudad = "San felix", habitantes = "1500"}, -- numero de indíce 3
-    {ciudad = "Puerto ordaz", habitantes = "1400"}  -- numero de indíce 4
+    {ciudad = "Upata", habitantes = "1200"}, -- número de indíce 1
+    {ciudad = "Tumeremo", habitantes = "4000"}, -- número de indíce 2
+    {ciudad = "San felix", habitantes = "1500"}, -- número de indíce 3
+    {ciudad = "Puerto ordaz", habitantes = "1400"}  -- número de indíce 4
 }
 
 -- i = indice de la ciudad
@@ -496,9 +495,9 @@ end
 
 Básicamente para cualquier lenguaje de programación, una estructura de control permite modificar el flujo de ejecución de instrucciones de un programa.
 
-Lua cuenta con 4 estructuras de control, la estructura if, while, repeat y for.
+Lua cuenta con 4 estructuras de control, la estructura `if`, `while`, `repeat` y `for`.
 
-Para crear una función en Lua, se utiliza la palabra reservada function , la estructura básica es la siguiente:
+Para crear una función en Lua, se utiliza la palabra reservada `function` , la estructura básica es la siguiente:
 
 {{< highlight lua >}}
 function nombreFuncion ()

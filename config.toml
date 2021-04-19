@@ -1,83 +1,114 @@
-baseURL = "https://diazvictor.github.io/"
+baseURL = "http://localhost:1313/"
 languageCode = "es"
 publishDir = "public"
-title = "diazvictor"
+title = "Víctor Díaz - Desarrollador Web y Amante de Lua"
 disqusShortname = "diazvictor"
 theme = "blue-ocean"
 
+# Language settings
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+
 [markup]
-  [markup.highlight]
-    anchorLineNos = true
-    codeFences = true
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = false
-    tabWidth = 4
+	[markup.highlight]
+		anchorLineNos = true
+		codeFences = true
+		lineNos = false
+		lineNumbersInTable = true
+		noClasses = false
+		tabWidth = 4
 
 [params]
 author = "Víctor Díaz"
-subtitle = "DESARROLLO WEB Y APLICACIONES"
-description = "Dedicado al desarrollo web y aplicaciones, enamorado de lua."
-copyright = "© 2021"
+subtitle = "Desarrollador Web y Amante de Lua"
+description = """Víctor Díaz joven apasionado por la programación,
+con más de 5 años de experiencia como desarrollador y diseñador web."""
+copyright = "© 2021 diazvictor"
 keywords = "blog, developer, personal"
 avatar = "/images/favicon.png"
 mainSections = ["post"]
 dateFormat = "2 January, 2006"
-readTime_post = true
 recent_num = 5
+readtime = true
 
 [menu]
 	[[menu.item]]
-	name = "BLOG"
-    url = "/post"
-    weight = 1
+		name = "BLOG"
+		url = "/post"
+		weight = 1
 
 	[[menu.item]]
-	name = "ABOUT"
-    url = "/about"
-    weight = 2
+		name = "AYUDA"
+		url = "/about"
+		weight = 2
 
 [params.sidebar]
 sidebar = true
 widgets = ["aboutbox", "recent", "categories", "taglist"]
 
 [params.widgets]
-aboutbox_description = "Desarrollador web y desktop con conocimientos (backend/frontend) en lenguajes Lua, Php, SQL (SQLite), HTML, CSS y Javascript."
-recent_num = 5 # Set the number of articles in the "Recent articles" widget
+aboutbox_description = """Soy un joven apasionado por la programación, con más
+de 5 años de experiencia como desarrollador y diseñador web."""
+recent_num = 5
 scrolltop = true
 social_footer = true
+
+[languages]
+	[languages.en]
+		title = "Víctor Díaz - Web Developer and Lua Lover"
+		contentDir = "content/en"
+		languageName = "English"
+		weight = 1
+
+		[languages.en.menu]
+			[[languages.en.menu.item]]
+				name = "BLOG"
+				url = "/post"
+				weight = 1
+			[[languages.en.menu.item]]
+				name = "ABOUT"
+				url = "/about"
+				weight = 2
+
+		[languages.en.params]
+			subtitle = "Web Developer and Lua Lover"
+			description = """Víctor Díaz is a young man passionate about
+			programming, with more than 5 years of experience as a web developer
+			and designer."""
+			[languages.en.params.widgets]
+				aboutbox_description = """I am a young man passionate about
+				programming, with more than 5 years of experience as a web
+				developer and designer."""
+				recent_num = 5
+				scrolltop = true
+				social_footer = true
+
+	[languages.es]
+		contentDir = "content/es"
+		languageName = "Spanish"
+		weight = 2
 
 [[params.social]]
 	name = "GITHUB"
 	icon = "fab fa-github-alt"
-	color = "is-link"
-    weight = 1
-    url = "https://github.com/diazvictor/"
+	url = "https://github.com/diazvictor"
 
 [[params.social]]
 	name = "TELEGRAM"
 	icon = "fab fa-telegram"
-	color = "is-link"
-    weight = 1
-    url = "https://t.me/diazvictor"
+	url = "https://t.me/diazvictor"
 
 [[params.social]]
 	name = "MASTODON"
 	icon = "fab fa-mastodon"
-	color = "is-link"
-    weight = 1
-    url = "https://mas.to/@diazvictor"
+	url = "https://mas.to/@diazvictor"
 
 [[params.social]]
 	name = "MAIL"
 	icon = "fas fa-envelope"
-	color = "is-link"
-    weight = 1
-    url = "mailto:victor.vector008@gmail.com"
+	url = "mailto:victor.vector008@gmail.com"
 
 [[params.social]]
 	name = "GITLAB"
 	icon = "fab fa-gitlab"
-	color = "is-link"
-    weight = 1
-    url = "https://gitlab.com/diazvictor/"
+	url = "https://gitlab.com/diazvictor"
