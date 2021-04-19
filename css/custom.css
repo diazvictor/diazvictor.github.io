@@ -20,6 +20,10 @@ code {
 	background-color: #209CEE !important
 }
 
+.navbar-burger {
+	height: auto;
+}
+
 .title.is-404 {
 	font-size: 6rem;
 }
@@ -42,24 +46,17 @@ code {
 	padding-bottom: 0;
 	border-bottom: none;
 }
+
+.section.sidebar .widget h1 {
+	margin-bottom: 20px !important;
+}
+
 .section.sidebar .widget .title:before {
 	content: "- ";
 }
 
-.section.sidebar .widget .post.toc nav ul li {
-	margin: 5px 0;
-}
-
-.social-nav a:after {
-	content: " |";
-}
-
-.social-nav a:last-child:after {
-	content: "";
-}
-
 .footer {
-	padding: 1.5rem;
+	padding: 3.5rem;
 }
 
 .footer .buttons {
