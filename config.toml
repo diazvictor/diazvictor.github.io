@@ -106,7 +106,7 @@ social_footer = true
 [[params.social]]
 	name = "MAIL"
 	icon = "fas fa-envelope"
-	url = "mailto:victor.vector008@gmail.com"
+	url = "mailto:diazvictor@tutamail.com"
 
 [[params.social]]
 	name = "GITLAB"
