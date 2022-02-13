@@ -18,9 +18,9 @@ Luego, extenderemos el script para agregarle un botón que realiza una determina
 Antes de comenzar, recomiendo los siguientes documentos para que podamos aprender
 un poco más sobre LGI:
 
-* https://github.com/pavouk/lgi/blob/master/docs/overview.md
-* https://github.com/pavouk/lgi/blob/master/docs/guide.md
-* https://github.com/pavouk/lgi/blob/master/docs/gtk.md
+* https://github.com/lgi-devs/lgi/blob/master/docs/overview.md
+* https://github.com/lgi-devs/lgi/blob/master/docs/guide.md
+* https://github.com/lgi-devs/lgi/blob/master/docs/gtk.md
 
 Puedes instalar lgi usando LuaRocks:
 
