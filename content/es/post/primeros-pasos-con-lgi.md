@@ -30,7 +30,7 @@ luarocks install lgi
 
 O con el gestor de paquetes de tu distro (si está disponible).
 
-## Ejemplo Simple
+## Ejemplo simple
 
 Para comenzar con nuestro tutorial crearemos el ejemplo más simple posible.
 Este programa creará una ventana vacía de `200x200` píxeles.
@@ -110,7 +110,7 @@ ingrese el comando:
 lua sample-window.lua
 ```
 
-## Ejemplo Extendido
+## Ejemplo extendido
 
 Para algo un poco más útil, aquí está la versión en **LGI** del clásico
 programa _Hello World_.
