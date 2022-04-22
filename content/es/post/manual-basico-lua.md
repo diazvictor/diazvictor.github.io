@@ -1,16 +1,16 @@
 ---
-title: "Manual Basico Sobre Lua"
+title: "Manual básico sobre Lua"
 date: 2020-04-24T13:46:37-04:00
-description: "En este manual aprenderemos lo basico de lua."
+description: "En este manual aprenderemos lo básico de Lua."
 keywords: ["lua", "manual", "basico", "geany", "textadept", "zerobrane"]
 readTime: true
 tags: ["lua", "manual"]f
 categories: ["Desarrollo"]
 ---
 
-# Manual basico de lua
+# Manual basico de Lua
 
-En este manual aprenderemos lo basico de lua.
+En este manual aprenderemos lo basico de Lua.
 Vease tambien el [manual](https://www.lua.org/manual/5.1/es/manual.html) oficial de lua para más informacion.
 
 ## Acerca de
@@ -91,15 +91,15 @@ para ejecutar dicho archivo seria de esta manera:
 
 ## Recomendaciones
 
-Para empezar a estudiar lua, recomiendo usar uno de los siguientes editores :
+Para empezar a estudiar Lua, recomiendo usar uno de los siguientes editores :
 
 * [Textadept](https://foicica.com/textadept/) esta escrito en lua, por lo que esta orientado a la programacion de dicho lenguaje, lo uso para hacer script rapidos
-* [Geany IDE](geany.org) es un buen IDE, rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a lua, hice unas configuraciones para lua y la verdad quedo de maravilla, lo uso más que todo para projectos grandes.
-* [ZeroBrane](http://example.net/),creo es el mejor de todos ya que es un IDE que tiene todo lo que necesitas para programar en lua
+* [Geany IDE](https://geany.org) es un buen IDE, rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a lua, hice unas configuraciones para lua y la verdad quedo de maravilla, lo uso más que todo para projectos grandes.
+* [ZeroBrane](https://studio.zerobrane.com/),creo es el mejor de todos ya que es un IDE que tiene todo lo que necesitas para programar en lua
 
-## ¿Que podemos hacer con lua?
+## ¿Que podemos hacer con Lua?
 
-Con lua podemos hacer desde aplicaciones de escritorio y paginas web hasta juegos.
+Con Lua podemos hacer desde aplicaciones de escritorio y paginas web hasta juegos.
 
 ## Sintaxis
 
@@ -116,7 +116,7 @@ la función `print`, inprime en pantalla lo que pasemos como parametro.
 
 ### Comentarios
 
-Los comentarios en lua son los siguientes:
+Los comentarios en Lua son los siguientes:
 
 {{< highlight lua >}}
 -- Esto es un comentario de una linea
@@ -132,10 +132,10 @@ Una variable es una palabra que almacena un valor.
 
 `variable = valor`
 
-en `lua` hay variables locales, globales y tablas.
+en Lua hay variables locales, globales y tablas.
 
 {{< highlight lua >}}
-variable = "global" -- lua reconoce todas las variables como globales a no ser, que la variable este declarada como local de esta manera
+variable = "global" -- Lua reconoce todas las variables como globales a no ser, que la variable este declarada como local de esta manera
 local variable = "local o privada"
 -- arreglo o tabla simple
 números = {"uno","dos","tres"} -- valores
@@ -165,7 +165,7 @@ Todos los valores en Lua son valores de primera clase. Esto significa que todos 
 almacenados en variables, pueden ser pasados como argumentos de funciones, y también ser devueltos
 como resultados.
 
-En lua hay 8 tipos, pero veremos 6:_nil_,_boolean_,_number_,_string_,_function_,_table_. Nil es el
+En Lua hay 8 tipos, pero veremos 6: _nil_, _boolean_, _number_ , _string_, _function_ y _table_. Nil es el
 tipo del valor nil, cuya principal propiedad es ser diferente de cualquier otro valor; normalmente representa
 la ausencia de un valor útil.El valor Boolean es false (falso) y true (verdadero). Tanto nil como
 false hacen una condición falsa; Number representa números reales (en coma flotante y doble precision).
@@ -197,28 +197,28 @@ estados = {
 }
 {{< /highlight >}}
 
-para comprobar que las variables son del tipo especificado usamos la funcion interna de lua `type`, que retorna un string que 
+para comprobar que las variables son del tipo especificado usamos la funcion interna de Lua `type`, que retorna un string que 
 describe el tipo de un valor dado.
 
-veamos un ejemplo:
+Veamos un ejemplo:
 
 ```lua
 print(type(nombre))
 ```
 
-si colocamos la variable nombre, la salida sera la siguiente:
+Si colocamos la variable nombre, la salida sera la siguiente:
 
 ```
 string
 ```
 
-y asi puedes probar con las demás variables.
+Asi puedes probar con las demás variables.
 
-## Operadores.
+## Operadores
 
-### Operadores aritméticos.
+### Operadores aritméticos
 
-Son aquellos que permiten realizar operaciones matemáticas básicas, Lua tiene los operadores aritméticos comunes:
+Son aquellos que permiten realizar operaciones matemáticas básicas. Lua tiene los operadores aritméticos comunes:
 
 | Operador | Propósito         |
 | -------- | ----------------- |
@@ -230,7 +230,7 @@ Son aquellos que permiten realizar operaciones matemáticas básicas, Lua tiene 
 | %        | modulo            |
 | -        | Negación (Unario) |
 
-### Operadores logicos.
+### Operadores logicos
 
 Los operadores lógicos en Lua son `and`, `or` y `not`. Como las estructuras de control, todos los operadores lógicos consideran `false`
 y `nil` como falso y todo lo demás como verdadero.
@@ -246,9 +246,9 @@ Tanto `and` como `or` usan evaluación de cortocircuito; esto es, su segundo ope
 | or         |
 | not        |
 
-vease tambien [tabla de la verdad de operadores logicos](https://es.wikipedia.org/wiki/Tabla_de_verdad)
+Vease tambien la [tabla de la verdad de operadores logicos](https://es.wikipedia.org/wiki/Tabla_de_verdad).
 
-### Operadores relacionales.
+### Operadores relacionales
 
 Los operadores relacionales son usados para comparar dos valores, si la exprecion evaluada es correcta dará 
 un resultado `true` (verdadero) de lo contrario sera `false` (falso). 
@@ -273,13 +273,13 @@ Lua tiene también una sentencia `for`, en dos formatos.
 
 Para crear una condicional se utiliza la palabra reservada `if`.
 
-ejemplo de sintaxis:
+Ejemplo de sintaxis:
 
-{{< highlight lua >}}
+``` lua
 if ( condicion ) then
     ...
 end
-{{< /highlight >}}
+```
 
 Si la condición se cumple (es decir, si su valor es `true`) se ejecutan todas las instrucciones que se encuentran 
 dentro del bloque {...}. Si la condición no se cumple (es decir, si su valor es `false`) no se ejecuta ninguna instrucción
@@ -315,7 +315,7 @@ Se pueden establecer varias condiciones a la vez, pudiendo utilizar `and`, `or` 
 
 Elaboraremos un script que me simule una clave de acceso. Si el usuario es: "admin" y la clave "123456" mostrara el mensaje "acceso permitido" caso contrario mostrara el mensaje "acceso denegado".
 
-usaremos las funciones `print` y `io.read`, con `print` imprimimos en pantalla lo que se le pase como parametro y con `io.read`
+Usaremos las funciones `print` y `io.read`, con `print` imprimimos en pantalla lo que se le pase como parametro y con `io.read`
 escribiremos en patalla.
 
 {{< highlight lua >}}
@@ -333,7 +333,7 @@ else
 end
 {{< /highlight >}}
 
-ahora podemos hacer que cuando ingresen el usuario de "admin" pero la "contrasena" que imprima en pantalla "acceso denegado, su contraseña no es valida"
+Ahora podemos hacer que cuando ingresen el usuario de "admin" pero la "contrasena" que imprima en pantalla "acceso denegado, su contraseña no es valida"
 y al reves con "contrasena" y "admin" con otra condicion llamada `elseif` que ya la veremos:
 
 {{< highlight lua >}}
@@ -367,10 +367,10 @@ while (condición) do
 end
 {{< /highlight >}}
 
-digamos que tenemos una alarma y lo programamos para que comienze a las 0 horas, y cuando llegue a las 10 horas se detenga
+Digamos que tenemos una alarma y lo programamos para que comienze a las 0 horas, y cuando llegue a las 10 horas se detenga
 y suene, bueno con este ejercicio lo hacemos.
 
-la variable **estado** representa el estado de la alarma, en este caso esta encendida, y la variable **hora** representa la hora en la que
+La variable **estado** representa el estado de la alarma, en este caso esta encendida, y la variable **hora** representa la hora en la que
 inicia la alarma, en este caso a las 0 horas, el bucle se encargara de contar las horas hasta que finalice, en este caso
 a las 10 horas, dicho esto cuando el bucle llegue a la hora indicada se detendra la alarma y avisara con un mensaje.
 
@@ -391,6 +391,7 @@ end
 {{< /highlight >}}
 
 #### Repeat
+
 La estructura repeat es parecida a la anterior con la diferencia que si la condición es verdadera el ciclo se interrumpe,
 en otros lenguajes se parece al do while.
 
@@ -541,10 +542,10 @@ Si ejecutamos nos devuelve el valor de:
 Como ejercicio complejo, haremos la famosa calculadora, estaremos usando la funcion `type` que retorna un string que 
 describe el tipo de un valor dado, `io.read` escribiremos en patalla, `print` con la cual imprimimos en pantalla y condicionales.
 
-nuestra funcion se llamara "calculadora" y recibira tres parametros, los cuales seran a que vendria siendo el primer valor,
+Nuestra funcion se llamara "calculadora" y recibira tres parametros, los cuales seran a que vendria siendo el primer valor,
 op que seria el operador (+,-,*,/) y b que seria el segundo valor para hacer la operacion.
 
-luego comprobaremos con la funcion `type` si el op (operador) es un string y el op es "+" sumamos a con a , si es "-" restamos 
+Luego comprobaremos con la funcion `type` si el op (operador) es un string y el op es "+" sumamos a con a , si es "-" restamos 
 a con b y asi con los demas,
 si ninguna condicion se cumple, imprimimos en pantalla "el operador no es valido".
 
@@ -580,4 +581,5 @@ calculadora(a, op, b)
 {{< /highlight >}}
 
 ## NOTA
+
 tal vez no me explique muy bien que se diga, pero estare puliendo la guía.

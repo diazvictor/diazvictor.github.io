@@ -18,9 +18,9 @@ Luego, extenderemos el script para agregarle un botón que realiza una determina
 Antes de comenzar, recomiendo los siguientes documentos para que podamos aprender
 un poco más sobre LGI:
 
-* https://github.com/pavouk/lgi/blob/master/docs/overview.md
-* https://github.com/pavouk/lgi/blob/master/docs/guide.md
-* https://github.com/pavouk/lgi/blob/master/docs/gtk.md
+* https://github.com/lgi-devs/lgi/blob/master/docs/overview.md
+* https://github.com/lgi-devs/lgi/blob/master/docs/guide.md
+* https://github.com/lgi-devs/lgi/blob/master/docs/gtk.md
 
 Puedes instalar lgi usando LuaRocks:
 
@@ -30,7 +30,7 @@ luarocks install lgi
 
 O con el gestor de paquetes de tu distro (si está disponible).
 
-## Ejemplo Simple
+## Ejemplo simple
 
 Para comenzar con nuestro tutorial crearemos el ejemplo más simple posible.
 Este programa creará una ventana vacía de `200x200` píxeles.
@@ -110,7 +110,7 @@ ingrese el comando:
 lua sample-window.lua
 ```
 
-## Ejemplo Extendido
+## Ejemplo extendido
 
 Para algo un poco más útil, aquí está la versión en **LGI** del clásico
 programa _Hello World_.
