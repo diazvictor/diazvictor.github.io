@@ -94,8 +94,8 @@ para ejecutar dicho archivo seria de esta manera:
 Para empezar a estudiar Lua, recomiendo usar uno de los siguientes editores :
 
 * [Textadept](https://foicica.com/textadept/) esta escrito en lua, por lo que esta orientado a la programacion de dicho lenguaje, lo uso para hacer script rapidos
-* [Geany IDE](geany.org) es un buen IDE, rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a Lua, hice unas configuraciones para Lua y la verdad quedo de maravilla, lo uso más que todo para projectos grandes.
-* [ZeroBrane](http://example.net/), creo es el mejor de todos ya que es un IDE que tiene todo lo que necesitas para programar en Lua
+* [Geany IDE](https://geany.org) es un buen IDE, rapido y con una interfaz amigable, se puede personalizar como quieras, con soporte a lua, hice unas configuraciones para lua y la verdad quedo de maravilla, lo uso más que todo para projectos grandes.
+* [ZeroBrane](https://studio.zerobrane.com/),creo es el mejor de todos ya que es un IDE que tiene todo lo que necesitas para programar en lua
 
 ## ¿Que podemos hacer con Lua?
 
@@ -581,4 +581,5 @@ calculadora(a, op, b)
 {{< /highlight >}}
 
 ## NOTA
+
 tal vez no me explique muy bien que se diga, pero estare puliendo la guía.
