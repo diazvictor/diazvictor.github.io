@@ -582,4 +582,4 @@ calculadora(a, op, b)
 
 ## NOTA
 
-tal vez no me explique muy bien que se diga, pero estare puliendo la guía.
+Tal vez no me explique muy bien que se diga, pero estaré puliendo la guía.
