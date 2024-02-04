@@ -4,7 +4,7 @@ date: 2020-04-24T13:46:37-04:00
 description: "En este manual aprenderemos lo básico de Lua."
 keywords: ["lua", "manual", "basico", "geany", "textadept", "zerobrane"]
 readTime: true
-tags: ["lua", "manual"]
+tags: ["lua", "manual"]f
 categories: ["Desarrollo"]
 ---
 
@@ -492,7 +492,7 @@ for i, v in ipairs(ciudades) do
 end
 {{< /highlight >}}
 
-### Funciónes
+### Funciones
 
 Básicamente para cualquier lenguaje de programación, una estructura de control permite modificar el flujo de ejecución de instrucciones de un programa.
 
